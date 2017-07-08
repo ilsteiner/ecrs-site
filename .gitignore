@@ -83,7 +83,7 @@ Thumbs.db
 
 # ignore everything in the "wp-content" directory, except:
 # - specified themes
-# wp-content/*
+/wp-content/*
 
 # Track specified themes
 !/wp-content/themes/Divi/
