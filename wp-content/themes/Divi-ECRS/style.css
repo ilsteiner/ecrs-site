@@ -818,7 +818,7 @@ top: 64px;
 
 
 
-/*@-moz-document url-prefix() { 
+/*@-moz-document url-prefix() {
 
 
 
@@ -10271,4 +10271,9 @@ body.single-event .event-address {
 figcaption .awsm-personal-info h3, figcaption .awsm-personal-info {
 	color: #333 !important;
 	border-color: #333;
+}
+
+/*Restyle the "who we are" page*/
+.list-style figure img {
+  max-widtch: 200px;
 }
