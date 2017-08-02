@@ -52,8 +52,15 @@
 
 <div class="entry-meta eventorganiser-event-meta">
 
+<!-- Optional Class Description button --!>
+<?php
+  if(!empty($class_description_field) && $class_description_field == 'true') {
+    ?>
+<div class="class-button"><a title="Class descriptions for this event" class="button no-line" href="class-descriptions" data-ytta-id="-">Classes</a></div>
+<?php } ?>
+
 <!-- Added by Isaac 6/21/17 -->
-<?php 
+<?php
 	// FAQ custom field value
 	$faq_field = get_post_meta($post->ID, 'faq', true);
 	// If it's set to 'true', then display
@@ -71,14 +78,14 @@
 	if(!empty($coming_soon_field) && $coming_soon_field == 'true') {
 ?>
 	<div class="register-button"><a class="button disabled no-line" href="#">Coming Soon</a></div>
-<?php 
+<?php
 	}
 
 	else {
 ?>
 	<div class="register-button"><a class="button button-blue no-line" href="#registration">Register for Event</a></div>
 	
-<?php 
+<?php
 	}
 ?>
 <!-- End modification by Isaac -->
