@@ -75,12 +75,16 @@
 <?php
 	// Coming soon custom field value
 	$coming_soon_field = get_post_meta($post->ID, 'coming_soon', true);
-	// If it's set to 'true', disable the registration button
-	if(!empty($coming_soon_field) && $coming_soon_field == 'true') {
+	// If it's set to 'true' and there are no class descriptions yet, disable the registration button
+	// If there are class descriptions, hide the button entirely
+	if(!empty($coming_soon_field) && $coming_soon_field == 'true' && $class_description_field != 'true') {
 ?>
 	<div class="register-button"><a class="button disabled no-line" href="#">Coming Soon</a></div>
 <?php
 	}
+	
+	//If both coming soon and class description are on, hide the button entirely
+	else if($coming_soon_field == 'true' && $class_description_field == 'true') {}
 
 	else {
 ?>
