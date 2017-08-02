@@ -10277,3 +10277,12 @@ figcaption .awsm-personal-info h3, figcaption .awsm-personal-info {
 .list-style .awsm-grid-card figure img {
   max-width: 200px;
 }
+
+/*Styling for class description page*/
+.et_pb_toggle_close{
+  padding-right: 5px;
+}
+
+.et_pb_toggle_close:nth-child(even){
+  background: #E9920D;
+}
