@@ -57,7 +57,7 @@
   $class_description_field = get_post_meta($post->ID, 'class_description', true);
   if(!empty($class_description_field) && $class_description_field == 'true') {
     ?>
-<div class="class-button"><a title="Class descriptions for this event" class="button no-line" href="class-descriptions" data-ytta-id="-">Classes</a></div>
+<div class="optional-button"><a title="Class descriptions for this event" class="button no-line" href="class-descriptions" data-ytta-id="-">Classes</a></div>
 <?php } ?>
 
 <!-- Added by Isaac 6/21/17 -->
@@ -67,7 +67,7 @@
 	// If it's set to 'true', then display
 	if(!empty($faq_field) && $faq_field == 'true') {
 		?>
-<div class="faq-button"><a title="Frequently asked questions about this event" class="button no-line" href="faq" data-ytta-id="-">Event FAQ</a></div>
+<div class="optional-button"><a title="Frequently asked questions about this event" class="button no-line" href="faq" data-ytta-id="-">Event FAQ</a></div>
 <?php } ?>
 <!-- End addition by Isaac -->
 

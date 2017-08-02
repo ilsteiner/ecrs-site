@@ -10254,8 +10254,8 @@ body.single-event .event-address {
 
 }
 
-/*Changes for new FAQ button*/
-.faq-button {
+/*Changes for new optional buttons*/
+.optional-button {
   float: right;
   padding-left: 5px;
 }
