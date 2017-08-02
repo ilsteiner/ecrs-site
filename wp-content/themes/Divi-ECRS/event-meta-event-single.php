@@ -54,6 +54,7 @@
 
 <!-- Optional Class Description button --!>
 <?php
+  $class_description_field = get_post_meta($post->ID, 'class_description', true);
   if(!empty($class_description_field) && $class_description_field == 'true') {
     ?>
 <div class="class-button"><a title="Class descriptions for this event" class="button no-line" href="class-descriptions" data-ytta-id="-">Classes</a></div>
