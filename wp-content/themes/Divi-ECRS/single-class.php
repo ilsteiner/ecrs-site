@@ -34,8 +34,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 							  $event_post = get_post( $event_id );
 							?>
 							
-							echo types_render_field( 'author-image', array( 'post_id' => $writer_id, 'size' => 'thumbnail' ) );
-							<a href="<?php echo get_permalink($event_post) ?>"><?php echo $event_post->post_title; ?></a>
+							<div class="class-event"><a href="<?php echo get_permalink($event_post) ?>" title="<?php echo $event_post->post_title; ?>">Go to event</a></div>
 
 						<?php
 							if ( ! post_password_required() ) :
