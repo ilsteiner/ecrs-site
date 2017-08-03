@@ -27,7 +27,15 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 							<h5>Led by:</h5>
 							<?php types_render_field( "class-age", array()); ?>
 							<h3 class="class-leader"><?php echo types_render_field( "class-leader", array( "separator" => ", ")); ?></h3>
-							<a href="<?php echo get_permalink($post->post_parent ); ?>"><?php echo get_the_title($post->post_parent); ?></a>
+							
+							<?php
+							 // get parent event
+							  $event_id = wpcf_pr_post_get_belongs( get_the_ID(), 'event' );
+							  $event_post = get_post( $event_id );
+							?>
+							
+							echo types_render_field( 'author-image', array( 'post_id' => $writer_id, 'size' => 'thumbnail' ) );
+							<a href="<?php echo get_permalink($event_post) ?>"><?php echo $event_post->post_title; ?></a>
 
 						<?php
 							if ( ! post_password_required() ) :
