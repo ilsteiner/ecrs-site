@@ -110,9 +110,11 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 					<?php
 						do_action( 'et_before_content' );
 
+            echo '<div class="class-age">' . types_render_field( "class-age", array()) . '</div>';
+
 						the_content();
 						
-						echo '<div class="class-age">' . types_render_field( "class-age", array()) . '</div>';
+						echo '<div class="class-info">' . types_render_field( "class-info", array()) . '</div>';
 
 						wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'Divi' ), 'after' => '</div>' ) );
 					?>
