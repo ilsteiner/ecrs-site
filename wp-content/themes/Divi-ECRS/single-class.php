@@ -26,7 +26,6 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 							<h1 class="entry-title"><?php the_title(); ?></h1>
 							<h5>Led by:</h5>
 							<?php types_render_field( "class-age", array()); ?>
-							<h3 class="class-leader"><?php echo types_render_field( "class-leader", array()); ?></h3>
 							<h3 class="class-leader"><?php echo types_render_field( "class-leader", array( "separator" => ", ")); ?></h3>
 
 						<?php
@@ -112,6 +111,8 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 						do_action( 'et_before_content' );
 
 						the_content();
+						
+						echo '<div class="class-age">' . types_render_field( "class-age", array()) . '</div>';
 
 						wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'Divi' ), 'after' => '</div>' ) );
 					?>
