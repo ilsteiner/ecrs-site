@@ -27,7 +27,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 							<h5>Led by:</h5>
 							<?php types_render_field( "class-age", array()); ?>
 							<h3 class="class-leader"><?php echo types_render_field( "class-leader", array( "separator" => ", ")); ?></h3>
-							<a href="<?php echo get_permalink(wp_get_post_parent_id( the_ID() )); ?>"><?php echo get_the_title(wp_get_post_parent_id( the_ID() )); ?></a>
+							<a href="<?php echo get_permalink($post->post_parent ); ?>"><?php echo get_the_title($post->post_parent); ?></a>
 
 						<?php
 							if ( ! post_password_required() ) :
