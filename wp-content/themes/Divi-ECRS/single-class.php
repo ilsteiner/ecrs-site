@@ -24,7 +24,9 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 					<?php if ( ( 'off' !== $show_default_title && $is_page_builder_used ) || ! $is_page_builder_used ) { ?>
 						<div class="et_post_meta_wrapper">
 							<h1 class="entry-title"><?php the_title(); ?></h1>
+							<h5>Led by:</h5>
 							<h3 class="class-leader"><?php echo(types_render_field( 'leader', array() )); ?></h3>
+							<h3 class="class-leader">[types field="my-number" separator=","][/types]</h3>
 
 						<?php
 							if ( ! post_password_required() ) :
