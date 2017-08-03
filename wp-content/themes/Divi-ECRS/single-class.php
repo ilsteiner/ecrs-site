@@ -33,8 +33,6 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 							  $event_id = wpcf_pr_post_get_belongs( get_the_ID(), 'event' );
 							  $event_post = get_post( $event_id );
 							?>
-							
-							<div class="class-event"><a href="<?php echo get_permalink($event_post) ?>" title="<?php echo $event_post->post_title; ?>">Go to event</a></div>
 
 						<?php
 							if ( ! post_password_required() ) :
@@ -123,6 +121,8 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 						the_content();
 						
 						echo '<div class="class-info">' . types_render_field( "class-info", array()) . '</div>';
+						
+						echo '<div class="class-event"><a href="' . get_permalink($event_post) . '" title="' . $event_post->post_title . '">Go to event</a></div>';
 
 						wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'Divi' ), 'after' => '</div>' ) );
 					?>
