@@ -85,4 +85,15 @@ function add_custom_query_var( $vars ){
   return $vars;
 }
 add_filter( 'query_vars', 'add_custom_query_var' );
+
+// Rewrite rule for class list page
+function add_rewrite_rules($rules) {
+$new_rules = array('class-descriptions/event/([^/]+)/?$' => 'index.php?pagename=class-descriptions&event=$matches[1]');
+$rules = $new_rules + $rules;
+return $aRules;
+}
+ 
+// hook add_rewrite_rules function into rewrite_rules_array
+add_filter('rewrite_rules_array', 'add_rewrite_rules');
+
 ?>

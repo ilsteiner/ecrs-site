@@ -17,18 +17,18 @@ get_header();
 					
 					<?php
 					// get parent event
-				// 	$event_id = get_query_var( 'event' );
+					$event_id = get_query_var( 'event' );
 				  
 				  //post query arguments
-				  // $args = array(
-				    // 'post-parent' => $event_id
-				    // );
+				  $args = array(
+				    'post-parent' => $event_id
+				    );
 				    
-				// 	$classes = get_posts($args);
+					$classes = get_posts($args);
 					
-				// 	foreach ($classes as $class) {
-					 // echo $class->post_title;
-				// 	}
+					foreach ($classes as $class) {
+					  echo $class->post_title;
+					}
 					?>
 					
 					Testy
