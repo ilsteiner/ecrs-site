@@ -26,8 +26,8 @@ get_header();
 				    
 					$classes = get_posts($args);
 					
-					foreach ($child_posts as $child_post) {
-					  echo $child_post->post_title;
+					foreach ($classes as $class) {
+					  echo $class->post_title;
 					}
 					?>
 					
