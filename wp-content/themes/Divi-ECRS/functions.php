@@ -53,7 +53,7 @@ function add_login_logout_link($items, $args) {
     $loginoutlink = ob_get_contents();
     ob_end_clean();
     $items .= '<li class="loginout">'. $loginoutlink .'</li>';
-    return $items; 
+    return $items;
 }
 
 
@@ -78,4 +78,11 @@ echo "<script type='text/javascript'>
   ga('send', 'pageview');
 </script>";
 }
+
+// Allow query variable for class list page
+function add_custom_query_var( $vars ){
+  $vars[] = "event";
+  return $vars;
+}
+add_filter( 'query_vars', 'add_custom_query_var' );
 ?>

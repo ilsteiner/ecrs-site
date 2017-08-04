@@ -1,5 +1,3 @@
-<?php /* Template Name: Class List */ ?>
-
 <?php
 
 get_header();
@@ -19,7 +17,7 @@ get_header();
 					
 					<?php
 					// get parent event
-				  $event_id = wpcf_pr_post_get_belongs( get_the_ID(), 'event' );
+					$event_id = get_query_var( 'event' );
 				  
 				  //post query arguments
 				  $args = array(
@@ -32,6 +30,8 @@ get_header();
 					  echo $child_post->post_title;
 					}
 					?>
+					
+					Testy
 
 				</article> <!-- .et_pb_post -->
 
