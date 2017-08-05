@@ -24,12 +24,6 @@ get_header();
 					//get event object
 					$event = null;
           
-          /*
-          $event = get_page_by_path( $event_name, OBJECT, 'event' );
-          
-          var_dump($event);
-          */
-          
           if ( $events = eo_get_events( array(
               'name' => $event_name
           ) ) ) $event = $events[0];
@@ -45,13 +39,13 @@ get_header();
 				  
 				  //post query arguments
 				  $args = array(
-				    'post-parent' => $event_name
+				    'post-parent' => $event->ID
 				    );
 				    
 					$classes = get_posts($args);
 					
 					foreach ($classes as $class) {
-					  //echo $class->post_title;
+					  echo $class->post_title;
 					}
 					?>
 					
