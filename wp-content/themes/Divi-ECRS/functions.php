@@ -90,16 +90,15 @@ add_filter( 'query_vars', 'add_custom_query_var' );
 */
 
 //Set template for class descriptions
-function prefix_url_rewrite_templates() {
+add_filter( 'template_include', 'class_list_template' );
  
-    if ( get_query_var( 'event' ) ) {
-        add_filter( 'template_include', function() {
-            return get_stylesheet_directory_uri() . '/page-class-descriptions.php';
-        });
-    }
+function class_list_template( $original_template ) {
+  if ( get_query_var( 'event' ) ) {
+    return get_stylesheet_directory_uri() . '/page-class-descriptions.php';
+  } else {
+    return $original_template;
+  }
 }
- 
-add_action( 'template_redirect', 'prefix_url_rewrite_templates' );
 
 // Rewrite rule for class list page
 function custom_rewrite_tag() {
