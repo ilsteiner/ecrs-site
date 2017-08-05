@@ -17,7 +17,7 @@ get_header();
 					
 					<?php
 					// get parent event
-					$event_name = get_query_var( 'event' );
+					$event_name = get_query_var( 'event_name' );
 					
 					echo '<div>Event name: ' . $event_name . '</div>';
 				  
