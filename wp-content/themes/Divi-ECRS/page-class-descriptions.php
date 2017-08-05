@@ -28,7 +28,7 @@ get_header();
               'category_name' => 'event',
               'post_status' => 'publish',
               'posts_per_page' => 1
-          ) ) ) $event = $events[0];
+          ) ) ) $event = $events[1];
           
           // Event with that name not found
           if ( ! is_null( $event ) ){
