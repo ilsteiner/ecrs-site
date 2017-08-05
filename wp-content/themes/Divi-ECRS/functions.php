@@ -94,7 +94,7 @@ function prefix_url_rewrite_templates() {
  
     if ( get_query_var( 'event' ) ) {
         add_filter( 'template_include', function() {
-            return get_template_directory() . '/page-class-descriptions.php';
+            return get_stylesheet_directory_uri() . '/page-class-descriptions.php';
         });
     }
 }
