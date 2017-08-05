@@ -26,6 +26,8 @@ get_header();
           
           $event = get_page_by_path( 'events/event/' . $event_name, OBJECT, 'event' );
           
+          echo $event;
+          
           /*
           if ( $events = eo_get_events( array(
               'name' => $event_name
@@ -49,7 +51,7 @@ get_header();
 					$classes = get_posts($args);
 					
 					foreach ($classes as $class) {
-					  echo $class->post_title;
+					  //echo $class->post_title;
 					}
 					?>
 					
