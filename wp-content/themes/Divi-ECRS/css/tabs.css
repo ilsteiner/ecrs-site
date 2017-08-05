@@ -1,0 +1,24 @@
+.class-description:not(:target) {
+  display: none;
+}
+
+.class-description:target {
+  display: block;
+}
+
+.class-descriptions{
+  background: red;
+  width: 60%;
+  float: left;
+  height: 100%;
+  /*line-height: 200px;*/
+  font-size: 1em;
+}
+
+.class-names{
+  display: block;
+  background: green;
+  width: 40%;
+  float: left;
+  height: 100%;
+}
