@@ -13,7 +13,6 @@ get_header();
 					<?php
 						the_content();
 					?>
-					</div> <!-- .entry-content -->
 					
 					<?php
 					//get event slug
@@ -71,6 +70,7 @@ get_header();
   					}
           }
 					?>
+					</div> <!-- .entry-content -->
 
 				</article> <!-- .et_pb_post -->
 
