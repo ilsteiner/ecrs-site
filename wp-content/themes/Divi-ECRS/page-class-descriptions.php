@@ -24,7 +24,7 @@ get_header();
 					//get event object
 					$event = null;
           
-          $event = get_page_by_path( 'events/event/' . $event_name, OBJECT, 'event' );
+          $event = get_page_by_path( '/events/event/' . $event_name, OBJECT, 'event' );
           
           var_dump($event);
           
