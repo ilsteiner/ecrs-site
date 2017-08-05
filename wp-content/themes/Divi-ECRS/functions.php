@@ -93,8 +93,8 @@ add_action('init', function() {
 //Enqueue tabs plugin
 function register_tabs_stuff() {
   if ( is_page( 'class-descriptions' ) ) {
-    wp_enqueue_style( 'tabs-styles', get_stylesheet_directory_uri() . '/plugins/Easy-Responsive-Tabs-to-Accordion/css/easy-responsive-tabs.css' );
-    wp_enqueue_script( 'tabs-script', get_stylesheet_directory_uri() . '/plugins/Easy-Responsive-Tabs-to-Accordion/js/easyResponsiveTabs.js' );
+    wp_enqueue_style( 'tabs-styles', get_stylesheet_directory_uri() . '/css/tabs.css' );
+    wp_enqueue_script( 'tabs-script', get_stylesheet_directory_uri() . '/js/tabs.js' );
     
   }
 }
