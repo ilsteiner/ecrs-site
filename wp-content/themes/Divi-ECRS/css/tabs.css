@@ -1,8 +1,8 @@
-div.class-description:not(:target) {
+.class-description:not(:target) {
   display: none;
 }
 
-div.class-description:target {
+.class-description:target {
   display: block;
 }
 

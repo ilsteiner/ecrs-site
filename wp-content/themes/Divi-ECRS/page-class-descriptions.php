@@ -49,12 +49,15 @@ get_header();
   					
   					//Display found classes
   					else{
+  					  //Get current URL for linking
+  					  $current_url = add_query_arg( $wp->query_string, '', home_url( $wp->request ) );
+  					  
   					  echo '<div class="class-contents">';
   					  
   					    echo '<div class="class-names>';
   					      echo '<ul class="class-names">';
         					  foreach ($classes as $index=>$class) {
-        					    echo '<li class="class-name"><a href="#class-' . $index . '">' . $class->post_title . '</a></li>';
+        					    echo '<li class="class-name"><a href="' . $current_url . '/#class-' . $index . '">' . $class->post_title . '</a></li>';
         					  }
   					      echo '</ul>';
   					    echo '</div>';
