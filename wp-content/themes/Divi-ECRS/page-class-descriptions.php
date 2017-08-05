@@ -30,27 +30,41 @@ get_header();
           
           // Event with that name not found
           if ( is_null( $event ) ){
-              echo "Event not found";
+              echo '<div class="not-found">No event found with this name.</div>';
           }
           
+          //Event found
           else {
             echo '<div>Event name: ' . get_the_title($event) . '</div>';
+          
+  				  //Arguments to find classes
+  				  $args = array(
+  				    'post-parent' => $event->ID,
+  				    'post_type' => 'class'
+  				    );
+  				    
+  					$classes = get_posts($args);
+  					
+  					//No classes found
+  					if( is_null($classes) ) {
+  					  echo '<div class="not-found">No classes found for this event.</div>';
+  					}
+  					
+  					//Display found classes
+  					else{
+  					  echo '<ul class="classes">';
+  					  
+  					  $is_first = true;
+  					  
+  					  foreach ($classes as $class) {
+  					    echo '<li class="class' . ($is_first === true ? ' active' : '' ) . '">' . $class->post_title . '</li>';
+  					    $is_first = false;
+  					  }
+  					  
+  					  echo '</ul>';
+  					}
           }
-				  
-				  //post query arguments
-				  $args = array(
-				    'post-parent' => $event->ID,
-				    'post_type' => 'class'
-				    );
-				    
-					$classes = get_posts($args);
-					
-					foreach ($classes as $class) {
-					  echo $class->post_title;
-					}
 					?>
-					
-					Testy
 
 				</article> <!-- .et_pb_post -->
 
