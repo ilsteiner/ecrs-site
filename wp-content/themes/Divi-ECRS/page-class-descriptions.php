@@ -19,8 +19,6 @@ get_header();
 					//get event slug
 					$event_name = get_query_var( 'event_name' );
 					
-					echo 'Slug: ' . $event_name;
-					
 					//get event object
 					$event = null;
           
@@ -52,7 +50,7 @@ get_header();
   					
   					//Display found classes
   					else{
-  					  echo '<ul class="classes">';
+  					  echo '<ul class="class-names">';
   					  
   					  $is_first = true;
   					  

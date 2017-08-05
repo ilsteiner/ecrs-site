@@ -79,16 +79,6 @@ echo "<script type='text/javascript'>
 </script>";
 }
 
-// Allow query variable for class list page
-
-/*
-function add_custom_query_var( $vars ){
-  $vars[] = "event";
-  return $vars;
-}
-add_filter( 'query_vars', 'add_custom_query_var' );
-*/
-
 // Rewrite rule for class list page
 add_action('init', function() {
     add_rewrite_rule( '^class-descriptions/([A-Za-z-]+)/?',
@@ -100,5 +90,11 @@ add_action('init', function() {
     add_rewrite_tag( '%event_name%', '([^&]+)' );
 }, 10, 0);
 
-// add_rewrite_rule('^class-descriptions/([^/]*)/?','index.php?post_type=page&name=class-descriptions&event=$matches[1]','top');
+//Enqueue tabs plugin
+function register_tabs_style() {
+  if ( is_page( 'class-descriptions' ) ) {
+    wp_enqueue_style( 'tabs', get_stylesheet_directory_uri() . '/plugins/Easy-Responsive-Tabs-to-Accordion/css/easy-responsive-tabs.css' );
+  }
+}
+add_action( 'wp_enqueue_scripts', 'register_tabs_style' );
 ?>
