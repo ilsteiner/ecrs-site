@@ -19,7 +19,7 @@ get_header();
 					// get parent event
 					$event_name = get_query_var( 'event' );
 					
-					echo $event_name;
+					echo '<div>Event name: ' . $event_name . '</div>';
 				  
 				  //post query arguments
 				  $args = array(
