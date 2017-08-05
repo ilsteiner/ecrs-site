@@ -89,27 +89,16 @@ function add_custom_query_var( $vars ){
 add_filter( 'query_vars', 'add_custom_query_var' );
 */
 
-//Set template for class descriptions
-add_filter( 'template_include', 'class_list_template' );
- 
-function class_list_template( $original_template ) {
-  if ( get_query_var( 'event' ) ) {
-    return get_stylesheet_directory_uri() . '/page-class-descriptions.php';
-  } else {
-    return $original_template;
-  }
-}
-
 // Rewrite rule for class list page
 function custom_rewrite_tag() {
-  add_rewrite_tag('%event%', '([^&]+)');
-}
+      add_rewrite_tag('%event%', '([^&]+)');
+    }
 add_action('init', 'custom_rewrite_tag', 10, 0);
 
-function custom_rewrite_rule() {
-  add_rewrite_rule('^class-descriptions/(.*)?','/index.php?page_id=2276&event=$matches[1]','top');
+function custom_rewrite_basic() {
+   add_rewrite_rule('^class-descriptions/([\w+]*)/', 'index.php/?pagename=class-descriptions&event=$matches[1]', 'top');
 }
-add_action('init', 'custom_rewrite_rule', 10, 0);
+add_action('init', 'custom_rewrite_basic');
 
 // add_rewrite_rule('^class-descriptions/([^/]*)/?','index.php?post_type=page&name=class-descriptions&event=$matches[1]','top');
 ?>
