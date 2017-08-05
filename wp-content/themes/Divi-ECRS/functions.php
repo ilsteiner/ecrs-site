@@ -91,7 +91,7 @@ add_filter( 'query_vars', 'add_custom_query_var' );
 
 // Rewrite rule for class list page
 function custom_rewrite_tag() {
-      add_rewrite_tag('%event%', '([^&]+)');
+      add_rewrite_tag('%event%', '([A-Za-z-]+)');
     }
 add_action('init', 'custom_rewrite_tag', 10, 0);
 
