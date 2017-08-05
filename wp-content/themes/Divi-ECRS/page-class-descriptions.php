@@ -61,7 +61,7 @@ get_header();
   					  
   					    echo '<div class="class-descriptions">';
       					  foreach ($classes as $index=>$class) {
-      					    echo '<div class="class-description" id="class-' . $index . '>' . $class->post_content . '</div>';
+      					    echo '<div class="class-description" id="class-' . $index . '">' . $class->post_content . '</div>';
       					  }
       					echo '</div>';
       					 
