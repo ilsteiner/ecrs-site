@@ -24,18 +24,18 @@ get_header();
 					//get event object
 					$event = null;
           
+          /*
           $event = get_page_by_path( $event_name, OBJECT, 'event' );
           
           var_dump($event);
+          */
           
-          /*
           if ( $events = eo_get_events( array(
               'name' => $event_name
           ) ) ) $event = $events[0];
-          */
           
           // Event with that name not found
-          if ( ! is_null( $event ) ){
+          if ( is_null( $event ) ){
               echo "Event not found";
           }
           
