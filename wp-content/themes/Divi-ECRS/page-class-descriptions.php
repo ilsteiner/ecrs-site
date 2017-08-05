@@ -79,9 +79,7 @@ get_header();
 </div> <!-- #main-content -->
 
 <script>
-  (function($) {
-    $('#classTabs').easyResponsiveTabs();
-  })( jQuery );
+  jQuery('#classTabs').easyResponsiveTabs();
 </script>
 
 <?php get_footer(); ?>
