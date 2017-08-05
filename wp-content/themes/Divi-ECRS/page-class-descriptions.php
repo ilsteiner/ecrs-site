@@ -17,7 +17,9 @@ get_header();
 					
 					<?php
 					// get parent event
-					$event_id = get_query_var( 'event' );
+					$event_name = get_query_var( 'event' );
+					
+					echo $event_name;
 				  
 				  //post query arguments
 				  $args = array(
