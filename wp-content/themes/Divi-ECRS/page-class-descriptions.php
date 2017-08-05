@@ -82,7 +82,7 @@ get_header();
   jQuery('#classTabs').easyResponsiveTabs({
     type: 'vertical', //Types: default, vertical, accordion
     width: 'auto', //auto or any custom width
-    fit: true,   // 100% fits in a container
+    fit: false,   // 100% fits in a container
     //closed: false, // Close the panels on start, the options 'accordion' and 'tabs' keep them closed in there respective view types
     //activate: function() {},  // Callback function, gets called if tab is switched
     tabidentify: 'tab_identifier_child', // The tab groups identifier *This should be a unique name for each tab group and should not be defined in any styling or css file.
