@@ -39,7 +39,8 @@ get_header();
 				  
 				  //post query arguments
 				  $args = array(
-				    'post-parent' => $event->ID
+				    'post-parent' => $event->ID,
+				    'post_type' => 'class'
 				    );
 				    
 					$classes = get_posts($args);
