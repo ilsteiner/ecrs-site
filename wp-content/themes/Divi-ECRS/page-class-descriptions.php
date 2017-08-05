@@ -28,7 +28,7 @@ get_header();
               'suppress_filters' => 'false',
               'post_status' => 'publish',
               'posts_per_page' => 1
-          ) ) ) $event = $events[];
+          ) ) ) $event = $events[0];
           
           // Event with that name not found
           if ( ! is_null( $event ) ){
