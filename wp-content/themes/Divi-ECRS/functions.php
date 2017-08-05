@@ -90,15 +90,15 @@ add_filter( 'query_vars', 'add_custom_query_var' );
 */
 
 // Rewrite rule for class list page
-function custom_rewrite_tag() {
-      add_rewrite_tag('%event%', '([A-Za-z-]+)');
-    }
-add_action('init', 'custom_rewrite_tag', 10, 0);
+add_action('init', function() {
+    add_rewrite_rule( '^class-descriptions/([A-Za-z-]+)/?',
+                      'index.php?pagename=class-descriptions&event_name=$matches[1]',
+                      'top' );
+}, 10, 0);
 
-function custom_rewrite_basic() {
-   add_rewrite_rule('^events/event/([A-Za-z-]+)/class-descriptions/', '/index.php/?page_id=2276&event=$matches[1]', 'top');
-}
-add_action('init', 'custom_rewrite_basic');
+add_action('init', function() {
+    add_rewrite_tag( '%event_name%', '([^&]+)' );
+}, 10, 0);
 
 // add_rewrite_rule('^class-descriptions/([^/]*)/?','index.php?post_type=page&name=class-descriptions&event=$matches[1]','top');
 ?>
