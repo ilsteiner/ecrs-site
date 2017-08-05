@@ -96,7 +96,7 @@ function custom_rewrite_tag() {
 add_action('init', 'custom_rewrite_tag', 10, 0);
 
 function custom_rewrite_rule() {
-  add_rewrite_rule('^class-descriptions/([^/]*)/?','index.php?page_id=2276&event=$matches[1]','top');
+  add_rewrite_rule('^class-descriptions/([^/]*)?','index.php?page_id=2276&event=$matches[1]','top');
 }
 add_action('init', 'custom_rewrite_rule', 10, 0);
 
