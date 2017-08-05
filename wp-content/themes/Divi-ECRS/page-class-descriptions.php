@@ -50,16 +50,24 @@ get_header();
   					
   					//Display found classes
   					else{
-  					  echo '<ul class="class-names">';
+  					  echo '<div id="classTabs">';
   					  
-  					  $is_first = true;
+  					  echo '<ul class="class-names resp-tabs-list">';
   					  
   					  foreach ($classes as $class) {
-  					    echo '<li class="class' . ($is_first === true ? ' active' : '' ) . '">' . $class->post_title . '</li>';
-  					    $is_first = false;
+  					    echo '<li class="class-name">' . $class->post_title . '</li>';
   					  }
   					  
   					  echo '</ul>';
+  					  
+  					  
+  					  echo '<div class="class-descriptions resp-tabs-container">';
+  					  
+  					  foreach ($classes as $class) {
+  					    echo '<div class="class-description">' . $class->post_content . '</div>';
+  					  }
+  					  
+  					  echo "</div>";
   					}
           }
 					?>
@@ -69,5 +77,11 @@ get_header();
 			<?php endwhile; ?>
 
 </div> <!-- #main-content -->
+
+<script>
+  (function($) {
+    $('#classTabs').easyResponsiveTabs();
+  })( jQuery );
+</script>
 
 <?php get_footer(); ?>
