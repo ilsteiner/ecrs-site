@@ -26,8 +26,6 @@ get_header();
           
           $event = get_page_by_path( $event_name, OBJECT, 'event' );
           
-          var_dump($event);
-          
           /*
           if ( $events = eo_get_events( array(
               'name' => $event_name
