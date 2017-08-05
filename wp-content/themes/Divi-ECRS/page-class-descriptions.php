@@ -16,10 +16,27 @@ get_header();
 					</div> <!-- .entry-content -->
 					
 					<?php
-					// get parent event
+					//get event slug
 					$event_name = get_query_var( 'event_name' );
 					
-					echo '<div>Event name: ' . $event_name . '</div>';
+					//get event object
+					$event = null;
+
+          if ( $events = get_posts( array(
+              'name' => $event_name,
+              'post_type' => 'event',
+              'post_status' => 'publish',
+              'posts_per_page' => 1
+          ) ) ) $event = $events[0];
+          
+          // Event with that name not found
+          if ( ! is_null( $event ) ){
+              echo "Event not found";
+          }
+          
+          else {
+            echo '<div>Event name: ' . get_the_title($event) . '</div>';
+          }
 				  
 				  //post query arguments
 				  $args = array(
