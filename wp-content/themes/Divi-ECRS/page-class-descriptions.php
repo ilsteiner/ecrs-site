@@ -24,7 +24,7 @@ get_header();
 
           if ( $events = get_posts( array(
               'name' => $event_name,
-              'post_type' => 'event',
+              'post_type' => 'post',
               'post_status' => 'publish',
               'posts_per_page' => 1
           ) ) ) $event = $events[0];
