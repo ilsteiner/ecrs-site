@@ -19,6 +19,8 @@ get_header();
 					//get event slug
 					$event_name = get_query_var( 'event_name' );
 					
+					echo 'Slug: ' . $event_name;
+					
 					//get event object
 					$event = null;
           
