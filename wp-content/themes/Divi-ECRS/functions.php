@@ -89,6 +89,18 @@ function add_custom_query_var( $vars ){
 add_filter( 'query_vars', 'add_custom_query_var' );
 */
 
+//Set template for class descriptions
+function prefix_url_rewrite_templates() {
+ 
+    if ( get_query_var( 'event' ) ) {
+        add_filter( 'template_include', function() {
+            return get_template_directory() . '/page-class-descriptions.php';
+        });
+    }
+}
+ 
+add_action( 'template_redirect', 'prefix_url_rewrite_templates' );
+
 // Rewrite rule for class list page
 function custom_rewrite_tag() {
   add_rewrite_tag('%event%', '([^&]+)');
