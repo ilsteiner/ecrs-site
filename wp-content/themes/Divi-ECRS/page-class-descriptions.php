@@ -22,12 +22,8 @@ get_header();
 					//get event object
 					$event = null;
 
-          if ( $events = get_posts( array(
-              'name' => $event_name,
-              'post_type' => 'event',
-              'suppress_filters' => 'false',
-              'post_status' => 'publish',
-              'posts_per_page' => 1
+          if ( $events = eo_get_events( array(
+              'name' => $event_name
           ) ) ) $event = $events[0];
           
           // Event with that name not found
