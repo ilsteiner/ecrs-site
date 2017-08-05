@@ -80,12 +80,24 @@ echo "<script type='text/javascript'>
 }
 
 // Allow query variable for class list page
+/*
 function add_custom_query_var( $vars ){
   $vars[] = "event";
   return $vars;
 }
 add_filter( 'query_vars', 'add_custom_query_var' );
+*/
 
 // Rewrite rule for class list page
-add_rewrite_rule('^class-descriptions/([^/]*)/?','index.php?post_type=page&name=class-descriptions&event=$matches[1]','top');
+function custom_rewrite_tag() {
+  add_rewrite_tag('%class-descriptions%', '([^&]+)');
+}
+add_action('init', 'custom_rewrite_tag', 10, 0);
+
+function custom_rewrite_rule() {
+  add_rewrite_rule('^class-descriptions/([^/]*)/?','index.php?page_id=2276&event=$matches[1]','top');
+}
+add_action('init', 'custom_rewrite_rule', 10, 0);
+
+// add_rewrite_rule('^class-descriptions/([^/]*)/?','index.php?post_type=page&name=class-descriptions&event=$matches[1]','top');
 ?>
