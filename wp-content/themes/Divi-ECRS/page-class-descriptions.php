@@ -52,7 +52,7 @@ get_header();
   					else{
   					  echo '<div id="classTabs">';
   					  
-  					  echo '<ul class="class-names resp-tabs-list">';
+  					  echo '<ul class="class-names resp-tabs-list vert-tab">';
   					  
   					  foreach ($classes as $class) {
   					    echo '<li class="class-name">' . $class->post_title . '</li>';
@@ -61,7 +61,7 @@ get_header();
   					  echo '</ul>';
   					  
   					  
-  					  echo '<div class="class-descriptions resp-tabs-container">';
+  					  echo '<div class="class-descriptions resp-tabs-container vert-tab">';
   					  
   					  foreach ($classes as $class) {
   					    echo '<div class="class-description">' . $class->post_content . '</div>';
