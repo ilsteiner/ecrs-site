@@ -31,3 +31,9 @@ div.class-names{
 ul.class-names{
   display: block;
 }
+
+.class-contents {
+  display: block;
+  display: flex;
+  overflow: hidden;
+}
