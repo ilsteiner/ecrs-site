@@ -54,7 +54,7 @@ get_header();
   					    echo '<div class="class-names">';
   					      echo '<ul class="class-names">';
         					  foreach ($classes as $index=>$class) {
-        					    echo '<li class="class-name" onclick="history.pushState(null, null,\'#desc-' . $index .'\')">'
+        					    echo '<li class="class-name" onclick="location.hash=\'desc-' . $index .'\';window.scrollTo(0,0);">'
         					            . $class->post_title .
         					         '</li>';
         					  }
