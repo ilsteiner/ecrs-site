@@ -85,8 +85,8 @@ get_header();
       					         // Individual content wrapper
       					    echo '<div class="class-description" id="desc-' . $index . '">'
       					           //Leader wrapper
-      					         . '<div class="class-leaders">'
-      					         . types_render_field( "class-leader", array( "separator" => ", "))
+      					         . '<div class="class-leaders">';
+      					         echo types_render_field( "class-leader", array( "separator" => ", "))
       					         . '</div>'
       					           //Copy wrapper
       					         . '<div class="class-copy">'
