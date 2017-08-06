@@ -1,5 +1,6 @@
 .class-description:not(:target) {
-  left: -1000px;
+  left: -100px;
+  z-index: 0;
   position: fixed;
   opacity: 0;
 }
@@ -7,6 +8,7 @@
 .class-description:target {
   opacity: 1;
   left: 0;
+  z-index: 5;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -25,6 +27,7 @@
 }
 
 div.class-names{
+  z-index: 5;
   display: block;
   width: 40%;
   float: left;
