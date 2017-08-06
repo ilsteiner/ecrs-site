@@ -21,8 +21,6 @@
 
 div.class-names{
   display: block;
-  background: green;
-  color: black;
   width: 40%;
   float: left;
   height: 100%;
@@ -36,4 +34,9 @@ ul.class-names{
   display: block;
   display: flex;
   overflow: hidden;
+}
+
+.class-name{
+  cursor: pointer;
+  cursor: hand;
 }
