@@ -29,7 +29,14 @@ get_header();
 <div id="main-content">
 
 			<?php while ( have_posts() ) : the_post(); ?>
-
+        <div class="extra-title">
+          <div class="sub-title">
+            Class Descriptions For
+          </div>
+          <h1 class="extra-title">
+            <?php echo get_the_title($event) ?>
+          </h1>
+        </div>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 					<div class="entry-content">
@@ -45,8 +52,6 @@ get_header();
           
           //Event found
           else {
-            echo '<div>Event name: ' . get_the_title($event) . '</div>';
-          
   				  //Arguments to find classes
   				  $args = array(
   				    'post-parent' => $event->ID,

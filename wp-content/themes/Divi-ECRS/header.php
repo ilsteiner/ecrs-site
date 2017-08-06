@@ -216,7 +216,7 @@
 
 		<?php if( !is_front_page() ) : ?>
 			<div id="page-header">
-				<h1><?php single_post_title(); echo $event;?></h1>
+				<h1><?php single_post_title(); ?></h1>
 			</div>
 			<div class="inner-header">
 				<?php if ( is_page( 240 ) ) : ?>
