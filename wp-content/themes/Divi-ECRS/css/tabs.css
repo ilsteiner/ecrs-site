@@ -101,14 +101,14 @@ h1.extra-title {
   display: none;
 }
 
-@media (min-width: 981px){
+@media (min-width: 982px){
   #et-main-area {
     margin-top: -10px;
   }
 }
 
-@media (min-width: 1038px){
-  #et-main-area {
+@media (min-width: 982px) and (max-width: 1037px){
+  #et-main-area{
     margin-top: -54px;
   }
 }
