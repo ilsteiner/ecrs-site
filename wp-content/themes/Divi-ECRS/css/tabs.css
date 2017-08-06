@@ -77,6 +77,11 @@ ul.class-names{
 	border-right: 10px solid transparent;
 	border-bottom: 10px solid transparent;
 	border-left: 10px solid #e89a31;
+	-webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 div.extra-title {
