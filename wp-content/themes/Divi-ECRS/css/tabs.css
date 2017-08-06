@@ -23,10 +23,9 @@ div.class-names{
   background: green;
   width: 40%;
   float: left;
-  height: 100%;
+  height: 1vh;
 }
 
 ul.class-names{
-  height: 2em;
-  width: 100%;
+  display: block;
 }
