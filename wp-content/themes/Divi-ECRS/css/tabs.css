@@ -1,9 +1,12 @@
-.class-description:not(:target) {
-  display: none;
+.class-description {
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
 }
 
 .class-description:target {
-  display: block;
+  display: block!important;
 }
 
 .class-descriptions{
