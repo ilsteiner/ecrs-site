@@ -106,3 +106,9 @@ h1.extra-title {
     margin-top: -10px;
   }
 }
+
+@media (min-width: 1038px){
+  #et-main-area {
+    margin-top: -54px;
+  }
+}
