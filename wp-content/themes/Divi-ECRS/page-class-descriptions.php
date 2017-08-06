@@ -1,4 +1,27 @@
 <?php
+//get event slug
+$event_name = get_query_var( 'event_name' );
+
+//get event object
+$event = null;
+
+if ( $events = eo_get_events( array(
+    'name' => $event_name
+) ) ) $event = $events[0];
+
+// Fix the title
+if($event != null){
+  add_filter( 'wp_title', 'event_title', 100 );
+}
+function event_title($title) {
+    global $event;
+    if(!$event) {
+        $title = the_title();
+    } else {
+        $title = the_title(get_the_title($event).'&nbsp');
+    }
+    return $title;
+}
 
 get_header();
 
@@ -11,20 +34,10 @@ get_header();
 
 					<div class="entry-content">
 					<?php
-						// the_content();
+						the_content();
 					?>
 					
 					<?php
-					//get event slug
-					$event_name = get_query_var( 'event_name' );
-					
-					//get event object
-					$event = null;
-          
-          if ( $events = eo_get_events( array(
-              'name' => $event_name
-          ) ) ) $event = $events[0];
-          
           // Event with that name not found
           if ( is_null( $event ) ){
               echo '<div class="not-found">No event found with this name.</div>';
