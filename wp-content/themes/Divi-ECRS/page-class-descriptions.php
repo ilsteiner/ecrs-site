@@ -52,15 +52,13 @@ get_header();
   					  echo '<div class="class-contents">';
   					  
   					    echo '<div class="class-names>';
-  					      echo '<ul class="class-names">';
+  					     // echo '<ul class="class-names">';
         					  foreach ($classes as $index=>$class) {
-        					    echo '<li class="class-name">
-        					            <a href="#desc-' . $index . '">'
+        					    echo '<a href="#desc-' . $index . '">'
                                 . $class->post_title
-        					         . '</a>
-        					         </li>';
+        					         . '</a>';
         					  }
-  					      echo '</ul>';
+  					     // echo '</ul>';
   					    echo '</div>';
   					  
   					    echo '<div class="class-descriptions">';
