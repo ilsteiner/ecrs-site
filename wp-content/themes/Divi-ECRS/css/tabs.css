@@ -23,7 +23,7 @@ div.class-names{
   background: green;
   width: 40%;
   float: left;
-  height: 1vh;
+  height: 100%;
 }
 
 ul.class-names{
