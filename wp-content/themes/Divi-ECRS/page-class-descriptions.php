@@ -51,7 +51,7 @@ get_header();
   					else{
   					  echo '<div class="class-contents">';
   					  
-  					    echo '<div class="class-names>';
+  					    echo '<div class="class-names">';
   					      echo '<ul class="class-names">';
         					  foreach ($classes as $index=>$class) {
         					    echo '<li class="class-name" onclick="location.hash=\'desc-' . $index .'\'">'
