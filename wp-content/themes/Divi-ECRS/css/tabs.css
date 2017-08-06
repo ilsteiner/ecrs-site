@@ -1,5 +1,5 @@
 .class-description:not(:target) {
-  left: -100;
+  left: -100px;
   position: fixed;
   opacity: 0;
 }
