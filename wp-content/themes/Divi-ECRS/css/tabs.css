@@ -11,6 +11,7 @@
 
 .class-descriptions{
   background: red;
+  color: black;
   width: 60%;
   float: left;
   height: 100%;
@@ -21,6 +22,7 @@
 div.class-names{
   display: block;
   background: green;
+  color: black;
   width: 40%;
   float: left;
   height: 100%;
