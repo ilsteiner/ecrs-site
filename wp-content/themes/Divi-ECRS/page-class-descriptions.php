@@ -55,7 +55,7 @@ get_header();
   					      echo '<ul class="class-names">';
         					  foreach ($classes as $index=>$class) {
         					    echo '<li class="class-name">
-        					            <a href="#desc-' . $index . '">'
+        					            <a href="https://www.ecrs.org/staging/5860/class-descriptions/fall-weekend-getaway-at-camp-harlam/#desc-' . $index . '">'
                                 . $class->post_title
         					         . '</a>
         					         </li>';
