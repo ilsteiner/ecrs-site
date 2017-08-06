@@ -24,6 +24,7 @@ div.class-names{
   width: 40%;
   float: left;
   height: 100%;
+  color: white;
 }
 
 ul.class-names{
@@ -39,4 +40,9 @@ ul.class-names{
 .class-name{
   cursor: pointer;
   cursor: hand;
+  background-color: #faa635;
+}
+
+.class-name:hover{
+  background-color: #e89a31;
 }
