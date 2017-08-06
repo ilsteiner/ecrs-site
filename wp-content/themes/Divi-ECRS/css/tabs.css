@@ -4,11 +4,13 @@
   left: 0;
   position: fixed;
   visibility: hidden;
+  opacity: 0;
 }
 
 .class-description:target {
   /*display: block;*/
   visibility: visible;
+  opacity: 1;
   transition: all .75s ease;
 }
 
