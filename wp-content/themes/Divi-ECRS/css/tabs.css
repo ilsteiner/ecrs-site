@@ -1,4 +1,4 @@
-.class-description {
+.class-description:not(:target) {
   display: block;
   top: 0;
   left: 0;
@@ -6,7 +6,7 @@
 }
 
 .class-description:target {
-  display: block!important;
+  display: block;
 }
 
 .class-descriptions{
