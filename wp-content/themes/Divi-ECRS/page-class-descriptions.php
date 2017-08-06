@@ -54,9 +54,11 @@ get_header();
   					    echo '<div class="class-names>';
   					      echo '<ul class="class-names">';
         					  foreach ($classes as $index=>$class) {
-        					    echo '<li class="class-name"><a href="https://www.ecrs.org/class-descriptions/'
-        					      . $event_name
-        					      . '/#class-' . $index . '/">' . $class->post_title . '</a></li>';
+        					    echo '<li class="class-name">
+        					            <a href="#class-' . $index . '/">'
+                                . $class->post_title
+        					         . '</a>
+        					         </li>';
         					  }
   					      echo '</ul>';
   					    echo '</div>';
