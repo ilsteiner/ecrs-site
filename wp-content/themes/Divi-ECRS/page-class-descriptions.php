@@ -79,9 +79,20 @@ get_header();
   					      echo '</ul>';
   					    echo '</div>';
   					  
+  					    // All the class descriptions
   					    echo '<div class="class-descriptions">';
       					  foreach ($classes as $index=>$class) {
-      					    echo '<div class="class-description" id="desc-' . $index . '">' . $class->post_content . '</div>';
+      					         // Individual content wrapper
+      					    echo '<div class="class-description" id="desc-' . $index . '">'
+      					           //Leader wrapper
+      					         . '<div class="class-leaders">'
+      					         . types_render_field( "class-leader", array( "separator" => ", "))
+      					         . '</div>'
+      					           //Copy wrapper
+      					         . '<div class="class-copy">'
+      					            . $class->post_content
+      					         . '</div>'
+      					       . '</div>';
       					  }
       					echo '</div>';
       					 
