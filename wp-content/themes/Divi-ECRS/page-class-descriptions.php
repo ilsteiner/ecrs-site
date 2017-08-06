@@ -55,7 +55,7 @@ get_header();
   					      echo '<ul class="class-names">';
         					  foreach ($classes as $index=>$class) {
         					    echo '<li class="class-name">
-        					            <a href="#class-' . $index . '">'
+        					            <a href="#desc-' . $index . '">'
                                 . $class->post_title
         					         . '</a>
         					         </li>';
@@ -65,7 +65,7 @@ get_header();
   					  
   					    echo '<div class="class-descriptions">';
       					  foreach ($classes as $index=>$class) {
-      					    echo '<div class="class-description" id="class-' . $index . '">' . $class->post_content . '</div>';
+      					    echo '<div class="class-description" id="desc-' . $index . '">' . $class->post_content . '</div>';
       					  }
       					echo '</div>';
       					 
