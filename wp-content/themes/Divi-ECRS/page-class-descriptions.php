@@ -54,11 +54,9 @@ get_header();
   					    echo '<div class="class-names>';
   					      echo '<ul class="class-names">';
         					  foreach ($classes as $index=>$class) {
-        					    echo '<li class="class-name">
-        					            <a href="#desc-' . $index . '">'
-                                . $class->post_title
-        					         . '</a>
-        					         </li>';
+        					    echo '<li class="class-name" onclick="location.hash=desc-' . $index .'">'
+        					            . $class->post_title .
+        					         '</li>';
         					  }
   					      echo '</ul>';
   					    echo '</div>';

@@ -5,8 +5,8 @@
   position: fixed;
 }
 
-.class-description:target {
-  display: block!important;
+div.class-description:target {
+  display: block;
 }
 
 .class-descriptions{
