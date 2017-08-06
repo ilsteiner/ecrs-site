@@ -30,12 +30,12 @@ get_header();
 
 			<?php while ( have_posts() ) : the_post(); ?>
         <div class="extra-title">
-          <div class="sub-title">
-            Class Descriptions For
-          </div>
           <h1 class="extra-title">
             <?php echo get_the_title($event) ?>
           </h1>
+          <div class="sub-title">
+            Class Descriptions
+          </div>
         </div>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
