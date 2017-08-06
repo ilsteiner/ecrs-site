@@ -109,6 +109,6 @@ h1.extra-title {
 
 @media (min-width: 982px) and (max-width: 1037px){
   #et-main-area{
-    margin-top: -54px;
+    margin-top: 0px;
   }
 }
