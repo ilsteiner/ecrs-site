@@ -72,7 +72,7 @@ get_header();
   					    echo '<div class="class-names">';
   					      echo '<ul class="class-names">';
         					  foreach ($classes as $index=>$class) {
-        					    echo '<li class="class-name class-name-' . $index . '" onclick="activate_class_tab(' . $index .');">'
+        					    echo '<li class="class-name class-name-' . $index . '" onclick="class_click(' . $index .');">'
         					            . $class->post_title .
         					         '</li>';
         					  }
