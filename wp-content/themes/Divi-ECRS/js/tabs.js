@@ -11,6 +11,10 @@ jQuery(document).ready(function() {
       }, 500);
     });
   }
+  //No hash
+  else {
+    jQuery(".class-name:first-of-type").click();
+  }
 });
 
 //For manual hash change event
