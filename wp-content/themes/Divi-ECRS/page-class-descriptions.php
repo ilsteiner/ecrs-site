@@ -57,7 +57,7 @@ get_header();
   				    'post-parent' => $event->ID,
   				    'post_type' => 'class',
   				    'orderby' => 'title',
-  				    'order' => 'DESC',
+  				    'order' => 'ASC',
   				    'posts_per_page' => -1
   				    );
   				    
