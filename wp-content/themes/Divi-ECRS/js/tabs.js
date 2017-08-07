@@ -25,7 +25,7 @@ function activate_class_tab(index) {
   jQuery(".class-name.active").on("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
     function(e){
       //Deactivate the old tab
-      old_tab = jQuery(this).addClass("viewed").removeClass("active").detach();
+      old_tab = jQuery(this).addClass("viewed").removeClass("active").css({'opacity':'1'}).detach();
       jQuery(this).off(e);
   });
   
@@ -36,7 +36,7 @@ function activate_class_tab(index) {
   });
   
   //Move old tab to bottom of the list
-  jQuery(old_tab).insertAfter(".class-name:last-of-type").css({'opacity':'1'});
+  jQuery(old_tab).insertAfter(".class-name:last-of-type");
   
   //Cut selected tab
   var new_tab = jQuery(".class-name-" + index).detach();
