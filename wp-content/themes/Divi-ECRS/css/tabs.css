@@ -38,12 +38,12 @@
 }
 
 .class-age {
-  display: inline;
-  font-weight: bold;
+  display: inline !important;
+  font-weight: bold !important;
 }
 
 .class-info {
-  font-style: italic;
+  font-style: italic !important;
 }
 
 div.class-names{
