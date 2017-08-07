@@ -19,8 +19,7 @@
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
-  transform: translate(20px);
-  margin-right: 20px;
+  transform: translate(10px);
   background-color: #f4efe7;
 }
 
@@ -87,11 +86,23 @@ ul.class-names{
   padding: 6px 20px;
   position: relative;
   background-color: #faa635;
+  border-top: solid 1px #ea9f3e;
+  border-bottom: solid 1px #ea9f3e;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
+}
+
+/*Hide top border for first first class name*/
+.class-name:first-of-type {
+  border-top: none;
+}
+
+/*Hide bottom border for last class name*/
+.class-name:last-of-type {
+  border-bottom: none;
 }
 
 .class-name:hover{
