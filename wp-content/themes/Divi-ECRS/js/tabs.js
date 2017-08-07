@@ -1,7 +1,7 @@
 jQuery(document).ready(function() {
   
   if(window.location.hash) {
-    windows.scrollTo(0,0);
+    window.scrollTo(0,0);
     
     //Get the fragment/hash
     var hash = window.location.hash.substring(1);
