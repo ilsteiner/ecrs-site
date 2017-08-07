@@ -1,3 +1,7 @@
+.class-contents {
+  margin: 25px 0px;
+}
+
 .class-description:not(:target) {
   left: -100px;
   z-index: 0;
@@ -22,14 +26,12 @@
 
 .class-description {
   padding: 25px;
-  margin-bottom: 6px;
 }
 
 .class-descriptions{
   width: 60%;
   float: left;
   height: 100%;
-  /*line-height: 200px;*/
   font-size: 1.2em;
 }
 
