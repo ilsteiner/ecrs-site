@@ -8,7 +8,7 @@ jQuery(document).ready(function() {
     activate_class_tab(hash);
     
     //For manual hash change event
-    $( window ).hashchange(function() {
+    jQuery( window ).hashchange(function() {
       activate_class_tab(hash)
     });
   }
