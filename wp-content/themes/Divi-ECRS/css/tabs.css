@@ -128,7 +128,7 @@ ul.class-names{
 	border-left: 0px solid #e89a31;
 }
 
-.class-name.active:after{
+.class-name.active:after {
   content: '';
 	opacity: 1;
 	position: absolute;
@@ -146,6 +146,12 @@ ul.class-names{
   -ms-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
+}
+
+.class-name.viewed:before {
+  content: "&#x39;";
+  position: relative;
+  font-family: 'ETmodules';
 }
 
 div.extra-title {
