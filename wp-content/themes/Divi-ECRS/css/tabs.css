@@ -19,13 +19,20 @@
 }
 
 .class-descriptions{
-  background: red;
-  color: black;
   width: 60%;
   float: left;
   height: 100%;
   /*line-height: 200px;*/
   font-size: 1.2em;
+}
+
+.class-leaders {
+  font-size: 1.5em;
+}
+
+.class-leaders:before {
+  content: "Led by:";
+  padding-right: 10px;
 }
 
 div.class-names{

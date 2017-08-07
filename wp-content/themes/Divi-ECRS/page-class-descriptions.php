@@ -88,10 +88,9 @@ get_header();
       					         // Individual content wrapper
       					    echo '<div class="class-description" id="desc-' . $index . '">'
       					           //Leader wrapper
-      					         . '<div class="class-leaders">'
+      					         . '<h5 class="class-leaders">'
       					         . do_shortcode($class_shortcode)
-      					         . types_render_field( "class-leader", array( "separator" => ", "))
-      					         . '</div>'
+      					         . '</h5>'
       					           //Copy wrapper
       					         . '<div class="class-copy">'
       					            . $class->post_content
