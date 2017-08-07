@@ -10,14 +10,13 @@ function activate_class_tab(index) {
   index = jQuery.trim(index);
   
   //Deactivate old tab
-  var old_tab = jQuery(".class-name.active");
-  old_tab.removeClass("active");
+  jQuery(".class-name.active").removeClass("active");
   
   //Cut selected tab
   var new_tab = jQuery(".class-name-" + index).detach();
   
   //Paste selected tab at top of the list
-  jQuery(new_tab).insertBefore(old_tab);
+  jQuery(new_tab).insertBefore(".class-name:first-of-type");
   
   //Activate new tab
   new_tab.addClass("active");
