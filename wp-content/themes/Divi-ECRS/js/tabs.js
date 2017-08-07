@@ -18,16 +18,15 @@ function activate_class_tab(index) {
   index = jQuery.trim(index);
   
   window.scrollTo(0,0);
-  
-  //Deactivate old tab
-  old_tab = jQuery(".class-name.active").addClass("viewed").removeClass("active").detach();
-  
   //Animate the tab disappearing
 	jQuery(old_tab).css({
 	  'transition': 'all .3s ease',
     'transform': 'translate(0px, 100px)',
     'opacity': '0'
 	}).on('transitionend', function() {
+	  //Deactivate old tab
+    old_tab = jQuery(".class-name.active").addClass("viewed").removeClass("active").detach();
+    
     //Actually move old tab to bottom of the list
     jQuery(old_tab).insertAfter(".class-name:last-of-type");
   });
