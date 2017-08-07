@@ -29,6 +29,12 @@ function activate_class_tab(index) {
   jQuery(this).off(e);
   });
   
+  jQuery(".class-name.active").css({
+  	'transition': 'all .3s ease',
+  	'transform': 'translate(0px, 100px)',
+  	'opacity': '0'
+  });
+  
   //Move old tab to bottom of the list
   jQuery(old_tab).insertAfter(".class-name:last-of-type");
   
