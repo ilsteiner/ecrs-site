@@ -10,7 +10,10 @@ function activate_class_tab(index) {
   index = jQuery.trim(index);
   
   //Deactivate old tab
-  jQuery(".class-name.active").addClass("viewed").removeClass("active");
+  old_tab = jQuery(".class-name.active").addClass("viewed").removeClass("active").detach();
+  
+  //Move old tab to bottom of the list
+  jQuery(old_tab).insertAfter(".class-name:last-of-type");
   
   //Cut selected tab
   var new_tab = jQuery(".class-name-" + index).detach();
