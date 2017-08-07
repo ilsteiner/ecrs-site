@@ -36,7 +36,7 @@ function activate_class_tab(index) {
   });
   
   //Move old tab to bottom of the list
-  jQuery(old_tab).insertAfter(".class-name:last-of-type");
+  jQuery(old_tab).insertAfter(".class-name:last-of-type").css({'opacity':'1'});
   
   //Cut selected tab
   var new_tab = jQuery(".class-name-" + index).detach();
