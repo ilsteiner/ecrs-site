@@ -35,6 +35,9 @@ function activate_class_tab(index) {
   
   //Activate new tab
   new_tab.addClass("active").removeClass("viewed");
+  
+  //Just in case
+  window.scrollTo(0,0);
 }
 
 function class_click(index) {
