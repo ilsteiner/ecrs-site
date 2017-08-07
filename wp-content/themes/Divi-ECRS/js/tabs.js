@@ -1,15 +1,13 @@
 jQuery(document).ready(function() {
   
   if(window.location.hash) {
-    window.scrollTo(0,0);
-    
     //Get the fragment/hash
     var hash = window.location.hash.substring(1);
     
     //For initial page load
-    activate_class_tab(hash);
-    
-    window.scrollTo(0,0);
+    jQuery.when(activate_class_tab(hash)).done(function(){
+      window.scrollTo(0,0);
+    });
   }
 });
 
@@ -37,9 +35,6 @@ function activate_class_tab(index) {
   
   //Activate new tab
   new_tab.addClass("active").removeClass("viewed");
-  
-  //Just in case
-  window.scrollTo(0,0);
 }
 
 function class_click(index) {
