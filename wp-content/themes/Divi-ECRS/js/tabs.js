@@ -22,7 +22,14 @@ function activate_class_tab(index) {
   //Deactivate old tab
   old_tab = jQuery(".class-name.active").addClass("viewed").removeClass("active").detach();
   
-  //Move old tab to bottom of the list
+  //Animate the tab disappearing
+	jQuery(old_tab).css({
+	  'transition': 'all .3s ease',
+    'transform': 'translate(0px, 100px)',
+    'opacity': '0'
+	});
+  
+  //Actually move old tab to bottom of the list
   jQuery(old_tab).insertAfter(".class-name:last-of-type");
   
   //Cut selected tab

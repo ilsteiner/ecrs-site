@@ -11,7 +11,7 @@ if ( $events = eo_get_events( array(
 
 // Fix the title
 if($event != null){
-  //add_filter( 'wp_title', 'event_title', 100 );
+  add_filter( 'wp_title', 'event_title', 100 );
 }
 function event_title($title) {
     global $event;
