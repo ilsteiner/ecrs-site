@@ -157,7 +157,9 @@ ul.class-names{
   content: "\f06e";
   position: relative;
   font-family: 'FontAwesome';
-  font-size: 1.3em;
+  font-size: 1.5em;
+  padding-right: 8px;
+  top: 1px;
 }
 
 div.extra-title {
