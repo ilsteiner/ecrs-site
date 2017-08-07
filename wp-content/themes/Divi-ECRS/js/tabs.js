@@ -6,12 +6,12 @@ jQuery(document).ready(function() {
     
     //For initial page load
     activate_class_tab(hash);
-    
-    //For manual hash change event
-    jQuery( window ).hashchange(function() {
-      activate_class_tab(hash);
-    });
   }
+});
+
+//For manual hash change event
+jQuery( window ).hashchange(function() {
+  activate_class_tab(window.location.hash.substring(1));
 });
 
 function activate_class_tab(index) {
