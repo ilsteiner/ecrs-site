@@ -150,7 +150,7 @@ ul.class-names{
 
 .class-name.viewed {
   color: #424242;
-  opacity: .6;
+  opacity: .4;
 }
 
 .class-name.viewed:before {
@@ -159,7 +159,7 @@ ul.class-names{
   font-family: 'FontAwesome';
   font-size: 1.5em;
   padding-right: 8px;
-  top: 1px;
+  top: 2px;
 }
 
 div.extra-title {
