@@ -19,22 +19,11 @@ function activate_class_tab(index) {
   
   window.scrollTo(0,0);
   
-  //Register events for after the old tab animations
-  jQuery(".class-name.active").on("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
-    function(e){
-      //Deactivate the old tab
-      var old_tab = jQuery(this).addClass("viewed").removeClass("active").css({'opacity':'1', 'transform':'none', 'transition':'none'}).detach();
-      
-      //Move old tab to bottom of the list
-      jQuery(old_tab).insertAfter(".class-name:last-of-type");
-      jQuery(this).off(e);
-  });
+  //Deactivate old tab
+  old_tab = jQuery(".class-name.active").addClass("viewed").removeClass("active").detach();
   
-  jQuery(".class-name.active").css({
-  	'transition': 'all .3s ease',
-  	'transform': 'translate(0px, 400px)',
-  	'opacity': '0'
-  });
+  //Move old tab to bottom of the list
+  jQuery(old_tab).insertAfter(".class-name:last-of-type");
   
   //Cut selected tab
   var new_tab = jQuery(".class-name-" + index).detach();
