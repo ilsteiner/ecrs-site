@@ -92,6 +92,10 @@ get_header();
       					   
       					         // Individual content wrapper
       					    echo '<div class="class-description" id="' . $class->post_name . '">'
+      					           //Class name wrapper
+      					         . '<h3>'
+      					           . $class->post_title
+      					         . '</h3>'
       					           //Leader wrapper
       					         . '<h5 class="class-leaders">'
       					         . do_shortcode($leader_shortcode)
