@@ -72,8 +72,8 @@ get_header();
   					  
   					    echo '<div class="class-names">';
   					      echo '<ul class="class-names">';
-        					  foreach ($classes as $index=>$class) {
-        					    echo '<li class="class-name class-name-' . $index . '" onclick="class_click(' . $index .');">'
+        					  foreach ($classes as $class) {
+        					    echo '<li class="class-name class-name-' . $class->post_name . '" onclick="class_click(' . $class->post_name .');">'
         					            . $class->post_title .
         					         '</li>';
         					  }
@@ -82,14 +82,14 @@ get_header();
   					  
   					    // All the class descriptions
   					    echo '<div class="class-descriptions">';
-      					  foreach ($classes as $index=>$class) {
+      					  foreach ($classes as $class) {
       					   // Generate shortcodes
       					   $leader_shortcode = '[types field="class-leader" id="' . $class->ID . '" separator=", "][/types]';
       					   $age_shortcode = '[types field="class-age" id="' . $class->ID . '"][/types]';
       					   $info_shortcode = '[types field="class-info" id="' . $class->ID . '"][/types]';
       					   
       					         // Individual content wrapper
-      					    echo '<div class="class-description" id="desc-' . $index . '">'
+      					    echo '<div class="class-description" id="' . $class->post_name . '">'
       					           //Leader wrapper
       					         . '<h5 class="class-leaders">'
       					         . do_shortcode($leader_shortcode)
