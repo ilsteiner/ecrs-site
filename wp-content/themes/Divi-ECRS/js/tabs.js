@@ -22,11 +22,11 @@ function activate_class_tab(index) {
   var old_tab = null;
   
   //Register events for after the old tab animations
-  jQuery(".class-name.active").on("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd",
+  jQuery(".class-name.active").on("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
     function(e){
       //Deactivate the old tab
       old_tab = jQuery(this).addClass("viewed").removeClass("active").detach();
-  jQuery(this).off(e);
+      jQuery(this).off(e);
   });
   
   jQuery(".class-name.active").css({
