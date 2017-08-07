@@ -148,10 +148,16 @@ ul.class-names{
   transition: all .3s ease;
 }
 
+.class-name.viewed {
+  color: #424242;
+  opacity: .6;
+}
+
 .class-name.viewed:before {
-  content: "&#x39;";
+  content: "\f06e";
   position: relative;
-  font-family: 'ETmodules';
+  font-family: 'FontAwesome';
+  font-size: 1.3em;
 }
 
 div.extra-title {
