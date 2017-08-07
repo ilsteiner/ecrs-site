@@ -191,8 +191,14 @@ h1.extra-title {
   }
 }
 
-@media (min-width: 982px) and (max-width: 1037px){
+@media (min-width: 982px) and (max-width: 1037px) {
   #et-main-area{
     margin-top: 0px;
+  }
+}
+
+@media (max-width: 782px) {
+  .class-leaders:before {
+    display: block;
   }
 }
