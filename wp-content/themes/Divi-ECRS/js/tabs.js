@@ -19,7 +19,7 @@ function activate_class_tab(index) {
 function class_click(index) {
   index = jQuery.trim(index);
   
-  location.hash = "desc-" + index;
+  location.hash = index;
   window.scrollTo(0,0);
   
   activate_class_tab(index);
