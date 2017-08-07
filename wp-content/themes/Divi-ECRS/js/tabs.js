@@ -18,18 +18,19 @@ function activate_class_tab(index) {
   index = jQuery.trim(index);
   
   window.scrollTo(0,0);
-  //Animate the tab disappearing
-	jQuery(old_tab).css({
-	  'transition': 'all .3s ease',
-    'transform': 'translate(0px, 100px)',
-    'opacity': '0'
-	}).on('transitionend', function() {
-	  //Deactivate old tab
-    old_tab = jQuery(".class-name.active").addClass("viewed").removeClass("active").detach();
-    
-    //Actually move old tab to bottom of the list
-    jQuery(old_tab).insertAfter(".class-name:last-of-type");
+  
+  var old_tab = null;
+  
+  //Register events for after the old tab animations
+  jQuery(".class-name.active").on("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd",
+    function(e){
+      //Deactivate the old tab
+      old_tab = jQuery(this).addClass("viewed").removeClass("active").detach();
+  jQuery(this).off(e);
   });
+  
+  //Move old tab to bottom of the list
+  jQuery(old_tab).insertAfter(".class-name:last-of-type");
   
   //Cut selected tab
   var new_tab = jQuery(".class-name-" + index).detach();
