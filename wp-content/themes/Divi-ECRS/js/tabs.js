@@ -27,10 +27,10 @@ function activate_class_tab(index) {
 	  'transition': 'all .3s ease',
     'transform': 'translate(0px, 100px)',
     'opacity': '0'
-	});
-  
-  //Actually move old tab to bottom of the list
-  jQuery(old_tab).insertAfter(".class-name:last-of-type");
+	}).on('transitionend', function() {
+    //Actually move old tab to bottom of the list
+    jQuery(old_tab).insertAfter(".class-name:last-of-type");
+  });
   
   //Cut selected tab
   var new_tab = jQuery(".class-name-" + index).detach();
