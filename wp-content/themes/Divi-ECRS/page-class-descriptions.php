@@ -56,6 +56,7 @@ get_header();
   				  $args = array(
   				    'post-parent' => $event->ID,
   				    'post_type' => 'class',
+  				    'order_by' => 'post_title',
   				    'posts_per_page' => -1
   				    );
   				    
