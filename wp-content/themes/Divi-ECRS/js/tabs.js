@@ -8,6 +8,8 @@ jQuery(document).ready(function() {
     
     //For initial page load
     activate_class_tab(hash);
+    
+    window.scrollTo(0,0);
   }
 });
 
