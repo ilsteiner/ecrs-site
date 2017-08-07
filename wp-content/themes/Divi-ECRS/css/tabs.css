@@ -26,6 +26,10 @@
   font-size: 1.2em;
 }
 
+.class-copy {
+  display: inline;
+}
+
 .class-leaders {
   font-size: 1.5em;
 }
@@ -40,6 +44,7 @@
 .class-age {
   display: inline;
   font-weight: bold;
+  padding-left: 5px;
 }
 
 .class-info {
