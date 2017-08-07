@@ -9,7 +9,7 @@ jQuery(document).ready(function() {
     
     //For manual hash change event
     jQuery( window ).hashchange(function() {
-      activate_class_tab(hash)
+      activate_class_tab(hash);
     });
   }
 });
