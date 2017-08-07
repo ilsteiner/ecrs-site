@@ -55,7 +55,8 @@ get_header();
   				  //Arguments to find classes
   				  $args = array(
   				    'post-parent' => $event->ID,
-  				    'post_type' => 'class'
+  				    'post_type' => 'class',
+  				    'posts_per_page' => -1
   				    );
   				    
   					$classes = get_posts($args);
