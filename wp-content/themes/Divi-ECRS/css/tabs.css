@@ -31,11 +31,19 @@
 }
 
 .class-leaders:before {
-  content: "leader";
+  content: "Led By";
   padding-right: 10px;
   color: #c6c6c6;
   font-size: .7em;
-  text-transform: lowercase;
+}
+
+.class-age {
+  display: inline;
+  font-weight: bold;
+}
+
+.class-info {
+  font-style: italic;
 }
 
 div.class-names{

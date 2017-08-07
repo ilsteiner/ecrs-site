@@ -82,18 +82,28 @@ get_header();
   					    // All the class descriptions
   					    echo '<div class="class-descriptions">';
       					  foreach ($classes as $index=>$class) {
-      					   // Generate shortcode for class leaders
-      					   $class_shortcode = '[types field="class-leader" id="' . $class->ID . '" separator=", "][/types]';
+      					   // Generate shortcodes
+      					   $leader_shortcode = '[types field="class-leader" id="' . $class->ID . '" separator=", "][/types]';
+      					   $age_shortcode = '[types field="class-age" id="' . $class->ID . '"][/types]';
+      					   $info_shortcode = '[types field="class-info" id="' . $class->ID . '"][/types]';
       					   
       					         // Individual content wrapper
       					    echo '<div class="class-description" id="desc-' . $index . '">'
       					           //Leader wrapper
       					         . '<h5 class="class-leaders">'
-      					         . do_shortcode($class_shortcode)
+      					         . do_shortcode($leader_shortcode)
       					         . '</h5>'
       					           //Copy wrapper
       					         . '<div class="class-copy">'
       					            . $class->post_content
+      					         . '</div>'
+      					           //Age wrapper
+      					         . '<div class-"class-age">'
+      					            . do_shortcode($age_shortcode)
+      					         . '</div>'
+      					           //Info wrapper
+      					         . '<div class-"class-info">'
+      					            . do_shortcode($info_shortcode)
       					         . '</div>'
       					       . '</div>';
       					  }
