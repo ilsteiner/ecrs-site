@@ -6,8 +6,9 @@ jQuery(document).ready(function() {
     
     //For initial page load
     jQuery.when(activate_class_tab(hash)).done(function(){
-      window.scrollTo(0,0);
-      alert("Hi");
+      setTimeout(function(){
+        window.scrollTo(0,0);
+      }, 500);
     });
   }
 });
