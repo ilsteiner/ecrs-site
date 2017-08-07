@@ -98,11 +98,11 @@ get_header();
       					            . $class->post_content
       					         . '</div>'
       					           //Age wrapper
-      					         . '<div class-"class-age">'
+      					         . '<div class="class-age">'
       					            . do_shortcode($age_shortcode)
       					         . '</div>'
       					           //Info wrapper
-      					         . '<div class-"class-info">'
+      					         . '<div class="class-info">'
       					            . do_shortcode($info_shortcode)
       					         . '</div>'
       					       . '</div>';
