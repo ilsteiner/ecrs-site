@@ -7,6 +7,8 @@ jQuery(document).ready(function() {
 });
 
 function activate_class_tab(index) {
+  index = jQuery.trim(index);
+  
   //Deactivate old tab
   jQuery(".class-name.active").removeClass("active");
   
@@ -15,6 +17,8 @@ function activate_class_tab(index) {
 }
 
 function class_click(index) {
+  index = jQuery.trim(index);
+  
   location.hash = "desc-" + index;
   window.scrollTo(0,0);
   
