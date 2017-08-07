@@ -23,7 +23,7 @@ function activate_class_tab(index) {
   jQuery(".class-name.active").on("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
     function(e){
       //Deactivate the old tab
-      var old_tab = jQuery(this).addClass("viewed").removeClass("active").css({'opacity':'1'}).detach();
+      var old_tab = jQuery(this).addClass("viewed").removeClass("active").css({'opacity':'1', 'transform':'none', 'transition':'none'}).detach();
       
       //Move old tab to bottom of the list
       jQuery(old_tab).insertAfter(".class-name:last-of-type");
