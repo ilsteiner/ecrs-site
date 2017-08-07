@@ -1,13 +1,23 @@
 jQuery(document).ready(function() {
+  
   if(window.location.hash) {
     //Get the fragment/hash
     var hash = window.location.hash.substring(1);
+    
+    //For initial page load
     activate_class_tab(hash);
+    
+    //For manual hash change event
+    $( window ).hashchange(function() {
+      activate_class_tab(hash)
+    });
   }
 });
 
 function activate_class_tab(index) {
   index = jQuery.trim(index);
+  
+  window.scrollTo(0,0);
   
   //Deactivate old tab
   old_tab = jQuery(".class-name.active").addClass("viewed").removeClass("active").detach();
@@ -29,7 +39,6 @@ function class_click(index) {
   index = jQuery.trim(index);
   
   location.hash = index;
-  window.scrollTo(0,0);
   
   activate_class_tab(index);
 }
