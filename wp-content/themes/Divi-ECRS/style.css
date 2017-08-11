@@ -1,0 +1,10288 @@
+/*
+
+
+
+ Theme Name:     ERCS Theme
+
+
+
+ Theme URI:      http://asbacreativestudio.com
+
+
+
+ Description:    Divi Child Theme
+
+
+
+ Author:         ASBA Creative Studio
+
+
+
+ Author URI:     http://www.asbacreativestudio.com
+
+
+
+ Template:       Divi
+
+
+
+ Version:        1.0.0
+
+
+
+*/
+
+
+
+
+
+
+
+@import url("../Divi/style.css");
+
+
+
+
+
+
+
+/* DIVI OVERRIDES */
+
+
+
+
+
+
+
+.clearfix:after {
+
+
+
+  content: "";
+
+
+
+  visibility: hidden;
+
+
+
+  display: block;
+
+
+
+  height: 0;
+
+
+
+  clear: both;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_section {
+
+
+
+  background-color: transparent!important;
+
+
+
+  padding: 20px 0!important;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_gutters3 .et_pb_column_1_3,
+
+
+
+.et_pb_gutters3.et_pb_row .et_pb_column_1_3 {
+
+
+
+  width: 30%;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_gutters3 .et_pb_column,
+
+
+
+.et_pb_gutters3.et_pb_row .et_pb_column {
+
+
+
+  margin-right: 5%;
+
+
+
+}
+
+
+
+
+
+
+
+.force-full-width {
+
+
+
+  position: relative;
+
+
+
+}
+
+
+
+
+
+
+
+.force-full-width .push-left {
+
+
+
+  position: absolute;
+
+
+
+  width: 40%;
+
+
+
+  top: 0;
+
+
+
+  bottom: 0;
+
+
+
+  background: url('/wp-content/uploads/2015/08/intergenerational-organization1.png') no-repeat center right;
+
+
+
+  background-size: cover;
+
+
+
+}
+
+
+
+.et_pb_row {
+
+}
+
+
+
+.force-full-width .right-section {
+
+
+
+  width: 45%;
+
+
+
+  margin-left: 42%;
+
+
+
+  padding: 10px 5px;
+
+
+
+}
+
+
+
+
+
+
+
+#post-598 .et_pb_section {
+
+
+
+  padding: 0 !important;
+
+
+
+}
+
+
+
+
+
+
+
+body {
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+  font-size: 15px;
+
+
+
+  font-weight: 400;
+
+
+
+  background: #f9f7f1;
+
+
+
+  -webkit-font-smoothing: antialiased;
+
+
+
+}
+
+
+
+
+
+
+
+h1,
+
+
+
+h2,
+
+
+
+h3,
+
+
+
+h4,
+
+
+
+h5,
+
+
+
+h6 {
+
+
+
+  font-family: Oswald, sans-serif;
+
+
+
+  font-weight: normal;
+
+
+
+  text-transform: uppercase;
+
+
+
+  color: #fff;
+
+
+
+  line-height: 1.3;
+
+
+
+}
+
+
+
+
+
+
+
+h1 {
+
+
+
+  font-size: 50px;
+
+
+
+}
+
+
+
+
+
+
+
+h2 {
+
+
+
+  font-size: 31px;
+
+
+
+}
+
+
+
+
+
+
+
+h3 {
+
+
+
+  font-size: 30px;
+
+
+
+}
+
+
+
+
+
+
+
+h4 {
+
+
+
+  font-size: 26px;
+
+
+
+}
+
+
+
+
+
+
+
+h5 {
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+  color: #43ad49;
+
+
+
+  font-weight: 800;
+
+
+
+  font-size: 24px;
+
+
+
+  margin: 0;
+
+
+
+  padding: 0;
+
+
+
+}
+
+
+
+
+
+
+
+hr {
+
+
+
+  border-top: 1px solid #E2E2E2;
+
+
+
+}
+
+
+
+
+
+
+
+input,
+
+
+
+input[type=text],
+
+
+
+textarea,
+
+
+
+select {
+
+
+
+  margin: 0;
+
+
+
+  padding: 10px;
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+  font-size: 15px;
+
+
+
+  color: #424242;
+
+
+
+  border: 1px solid #eee;
+
+
+
+}
+
+
+
+
+
+
+
+input[type=text]:focus,
+
+
+
+input[type=email]:focus,
+
+
+
+input[type=password]:focus,
+
+
+
+input.text:focus,
+
+
+
+input.title:focus,
+
+
+
+textarea:focus,
+
+
+
+select:focus {
+
+
+
+  border-color: #eee;
+
+
+
+  color: #424242;
+
+
+
+}
+
+
+
+
+
+
+
+#main-content {
+
+
+
+  background: transparent;
+
+
+
+}
+
+
+
+
+
+
+
+.become-member li {
+
+
+
+  list-style: none;
+
+
+
+}
+
+
+
+
+
+
+
+.become-member li:before {
+
+
+
+  content: "\f05d";
+
+
+
+  font-family: fontawesome;
+
+
+
+  margin-right: 5px;
+
+
+
+}
+
+
+
+
+
+
+
+.become-member .button {
+
+
+
+  margin-top: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.become-member .button:before,
+
+
+
+.register .button:before {
+
+
+
+  display: none;
+
+
+
+}
+
+
+
+
+
+
+
+.orange-headers h1,
+
+
+
+.orange-headers h2,
+
+
+
+.orange-headers h3,
+
+
+
+.orange-headers h4,
+
+
+
+.orange-headers h5,
+
+
+
+.orange-headers h6 {
+
+
+
+  color: #faa634;
+
+
+
+}
+
+
+
+
+
+
+
+.smaller-text {
+
+
+
+  font-size: 14px;
+
+
+
+  line-height: 1.6;
+
+
+
+  font-weight: 500;
+
+
+
+}
+
+
+
+
+
+
+
+.lowercase {
+
+
+
+  text-transform: none;
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+  font-weight: 700;
+
+
+
+  line-height: 1.2;
+
+
+
+}
+
+
+
+
+
+
+
+.tagline {
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+  font-weight: normal;
+
+
+
+  text-transform: none;
+
+
+
+  color: #00bed9;
+
+
+
+  font-size: 24px;
+
+
+
+}
+
+
+
+
+
+
+
+#main-header,
+
+
+
+.et_header_style_left .logo_container,
+
+
+
+.container.et_menu_container {
+
+
+
+  height: 160px;
+
+
+
+  box-shadow: none;
+
+
+
+}
+
+
+
+
+
+
+
+#main-header {
+
+
+
+  background: url(/wp-content/uploads/2016/09/cloud-rev2-91316.png) no-repeat center top #f9f7f1;
+
+
+
+  background-size: 100%;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.et_section_transparent,
+
+
+
+.page.et_pb_pagebuilder_layout #main-content {
+
+
+
+  position: relative;
+
+
+
+}
+
+
+
+#header{
+
+top: 64px;
+
+}
+
+
+
+/*@-moz-document url-prefix() {
+
+
+
+	#page-container{
+
+
+
+	padding-top: 155px!important;
+
+
+
+	}
+
+
+
+}*/
+
+
+
+
+
+
+
+
+
+
+
+/*LOGO*/
+
+
+
+
+
+
+
+#main-header,
+
+
+
+.et_header_style_left .logo_container,
+
+
+
+.container.et_menu_container {
+
+
+
+  position: relative;
+
+
+
+  height: auto !important;
+
+
+
+}
+
+
+
+
+
+
+
+#logo {
+
+
+
+  max-height: 120px;
+
+
+
+  margin: 10px auto 5px;
+
+
+
+}
+
+
+
+
+
+
+
+.logo_container {
+
+
+
+  text-align: center;
+
+
+
+  height: auto !important;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*NAV*/
+
+
+
+
+
+
+
+.et_menu_container {
+
+
+
+  background-color: #48ac4e;
+
+
+
+  position: relative;
+
+
+
+}
+
+
+
+
+
+
+
+nav#top-menu-nav,
+
+
+
+#top-menu,
+
+
+
+nav.fullwidth-menu-nav,
+
+
+
+.fullwidth-menu {
+
+
+
+  float: none;
+
+
+
+  padding-right: 100px;
+
+
+
+  text-align: left;
+
+
+
+}
+
+
+
+
+
+
+
+.et_header_style_left #et-top-navigation,
+
+
+
+.et_header_style_split #et-top-navigation {
+
+
+
+  font-family: Oswald, sans-serif;
+
+
+
+  font-weight: 400;
+
+
+
+  padding: 0px !important;
+
+
+
+  text-transform: uppercase;
+
+
+
+  max-width: 97%;
+
+
+
+  float: none;
+
+
+
+  text-align: center;
+
+
+
+  position: relative;
+
+
+
+  margin: auto;
+
+
+
+}
+
+
+
+
+
+
+
+.et_header_style_left #et-top-navigation nav > ul > li > a,
+
+
+
+.et_header_style_split #et-top-navigation nav > ul > li > a {
+
+
+
+  font-size: 18px;
+
+
+
+  padding: 20px 10px;
+
+
+
+  text-transform: uppercase;
+
+
+
+  color: #fff;
+
+
+
+}
+
+
+
+
+
+
+
+#top-menu-nav > ul > li > a:hover,
+
+
+
+#et-secondary-menu > ul > li > a:hover,
+
+
+
+.fullwidth-menu a:hover,
+
+
+
+#et-info-email:hover,
+
+
+
+.et-social-icons a:hover,
+
+
+
+#et-top-navigation .current-menu-item a {
+
+
+
+  background: #3b9940;
+
+
+
+  opacity: 1;
+
+
+
+}
+
+
+
+
+
+
+
+#top-menu li,
+
+
+
+.fullwidth-menu li {
+
+
+
+  padding: 0;
+
+
+
+}
+
+
+
+
+
+
+
+#top-menu .menu-item-has-children > a:first-child::after,
+
+
+
+.fullwidth-menu .menu-item-has-children > a:first-child::after,
+
+
+
+#et-secondary-nav .menu-item-has-children > a:first-child::after {
+
+
+
+  top: 19px;
+
+
+
+}
+
+
+
+
+
+
+
+.nav li ul {
+
+
+
+  padding: 0;
+
+
+
+  background: none;
+
+
+
+  border-top: medium none;
+
+
+
+  box-shadow: none;
+
+
+
+}
+
+
+
+
+
+
+
+.nav li li a,
+
+
+
+.et_mobile_menu li a {
+
+
+
+  background: #FAA635;
+
+
+
+  color: #fff!important;
+
+
+
+}
+
+
+
+
+
+
+
+.nav ul li a:hover,
+
+
+
+.et_mobile_menu li a:hover {
+
+
+
+  background-color: #e89a31;
+
+
+
+  color: #fff;
+
+
+
+  opacity: 1;
+
+
+
+}
+
+
+
+
+
+
+
+#top-menu li li,
+
+
+
+.nav li li {
+
+
+
+  padding: 0;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* BUTTONS */
+
+
+
+
+
+
+
+button,
+
+
+
+.button,
+
+
+
+.button-primary,
+
+
+
+.fpw-read-more-link,
+
+
+
+.buy a,
+
+
+
+.swpm-subscription-button-submit,
+
+
+
+a.et_pb_pricing_table_button.et_pb_button,
+
+
+
+.cognito #c-forms-form button,
+
+
+
+.mm-button {
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+  font-size: 15px;
+
+
+
+  line-height: 1 !important;
+
+
+
+  position: relative;
+
+
+
+  padding: 1em 2em;
+
+
+
+  transition-timing-function: ease;
+
+
+
+  transition-duration: .3s;
+
+
+
+  transition-property: all;
+
+
+
+  text-transform: uppercase;
+
+
+
+  color: #fff;
+
+
+
+  border: none;
+
+
+
+  background: #faa635;
+
+
+
+  font-weight: 500;
+
+
+
+  margin-top: 20px;
+
+
+
+  border-radius: 0;
+
+
+
+}
+
+
+
+
+
+
+
+a.et_pb_pricing_table_button.et_pb_button {
+
+
+
+  display: block;
+
+
+
+  margin: 0 30px;
+
+
+
+}
+
+
+
+
+
+
+
+.fpw-read-more-link {
+
+
+
+  background: #00bed9;
+
+
+
+  display: block;
+
+
+
+}
+
+
+
+
+
+
+
+.button-blue {
+
+
+
+  background: #00bed9;
+
+
+
+}
+
+
+
+
+
+
+
+button:hover,
+
+
+
+.button:hover,
+
+
+
+.button-primary:hover,
+
+
+
+.fpw-read-more-link:hover,
+
+
+
+.buy a:hover,
+
+
+
+.swpm-subscription-button-submit:hover,
+
+
+
+a.et_pb_pricing_table_button.et_pb_button:hover,
+
+
+
+.eo-booking-button:hover,
+
+
+
+.cognito #c-forms-form button:hover {
+
+
+
+  padding-left: 1.5em;
+
+
+
+  padding-right: 2.5em;
+
+
+
+  cursor: pointer;
+
+
+
+  color: #fff;
+
+
+
+}
+
+
+
+
+
+
+
+.button:after,
+
+
+
+.button-primary:after,
+
+
+
+.fpw-read-more-link:after,
+
+
+
+.buy a:after,
+
+
+
+.swpm-subscription-button-submit:after,
+
+
+
+a.et_pb_pricing_table_button.et_pb_button:after,
+
+
+
+.eo-booking-button:after,
+
+
+
+.cognito #c-forms-form button:after {
+
+
+
+  font-family: fontawesome;
+
+
+
+  font-size: 1.5em;
+
+
+
+  line-height: 0.6;
+
+
+
+  content: '\f105';
+
+
+
+  -webkit-transition: all .3s;
+
+
+
+  -moz-transition: all .3s;
+
+
+
+  transition: all .3s;
+
+
+
+  opacity: 0;
+
+
+
+  position: absolute;
+
+
+
+  margin-left: -1em;
+
+
+
+}
+
+
+
+
+
+
+
+.button:hover:after,
+
+
+
+.button-primary:hover:after,
+
+
+
+.fpw-read-more-link:hover:after,
+
+
+
+.buy a:hover:after,
+
+
+
+.swpm-subscription-button-submit:hover:after,
+
+
+
+a.et_pb_pricing_table_button.et_pb_button:hover:after,
+
+
+
+.eo-booking-button:hover:after,
+
+
+
+.cognito #c-forms-form button:hover:after {
+
+
+
+  z-index: 1;
+
+
+
+  margin-left: 0.3em;
+
+
+
+  opacity: 1;
+
+
+
+}
+
+
+
+
+
+
+
+.button:before {
+
+
+
+  height: 1px;
+
+
+
+  content: '';
+
+
+
+  background-color: white;
+
+
+
+  position: absolute;
+
+
+
+  top: -30px;
+
+
+
+  display: block;
+
+
+
+  width: 100%;
+
+
+
+  left: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.button {
+
+
+
+  display: inline-block;
+
+
+
+}
+
+
+
+
+
+
+
+.button-wrapper {
+
+
+
+  text-align: center;
+
+
+
+}
+
+
+
+
+
+
+
+.button-lg {
+
+
+
+  font-size: 20px;
+
+
+
+}
+
+
+
+
+
+
+
+.button-lg:after {
+
+
+
+  line-height: 0.6;
+
+
+
+}
+
+
+
+
+
+
+
+.button.no-line {
+
+
+
+  margin-top: 10px;
+
+
+
+}
+
+
+
+
+
+
+
+.button.no-line:before {
+
+
+
+  display: none;
+
+
+
+}
+
+
+
+
+
+
+
+.button-cancel {
+
+
+
+  background:
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* WIDGETS */
+
+
+
+
+
+
+
+#sign-in {
+
+
+
+  position: absolute;
+
+
+
+  right: 0;
+
+
+
+  bottom: 0;
+
+
+
+  padding: 10px 15px;
+
+
+
+  background-color: #faa635;
+
+
+
+  font-family: Oswald, sans-serif;
+
+
+
+  text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+
+
+#sign-in li {
+
+
+
+  float: left;
+
+
+
+  margin: 0;
+
+
+
+  padding: 5px;
+
+
+
+  list-style: none;
+
+
+
+}
+
+
+
+
+
+
+
+.login > a {
+
+
+
+  font-size: 18px;
+
+
+
+  color: #f4efe7;
+
+
+
+}
+
+
+
+
+
+
+
+.login {
+
+
+
+  line-height: 2;
+
+
+
+  float: left;
+
+
+
+  position: relative;
+
+
+
+}
+
+
+
+
+
+
+
+.login a:before {
+
+
+
+  font-family: fontawesome;
+
+
+
+  margin-right: 5px;
+
+
+
+  content: '\f090';
+
+
+
+  display: inline-block;
+
+
+
+}
+
+
+
+
+
+
+
+.login.active a:before {
+
+
+
+  -webkit-transform: rotate(90deg);
+
+
+
+  -moz-transform: rotate(90deg);
+
+
+
+  -o-transform: rotate(90deg);
+
+
+
+  -ms-transform: rotate(90deg);
+
+
+
+  transform: rotate(90deg);
+
+
+
+}
+
+
+
+
+
+
+
+.login > a {
+
+
+
+  color: #f4efe7;
+
+
+
+}
+
+
+
+
+
+
+
+.login a:before {
+
+
+
+  font-family: fontawesome;
+
+
+
+  content: '\f090';
+
+
+
+}
+
+
+
+
+
+
+
+.textwidget {
+
+
+
+  line-height: 1;
+
+
+
+}
+
+
+
+
+
+
+
+#mailing-list {
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+  line-height: 0;
+
+
+
+  overflow: hidden;
+
+
+
+  padding: 10px;
+
+
+
+  text-align: center;
+
+
+
+  color: #fff;
+
+
+
+  background: #3b9940;
+
+
+
+  z-index: 999;
+
+
+
+  position: relative;
+
+
+
+}
+
+
+
+
+
+
+
+#mailing-list li {
+
+
+
+  margin: 0;
+
+
+
+  padding: 0;
+
+
+
+  list-style: none;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* WELCOME */
+
+
+
+
+
+
+
+.welcome-container {
+
+
+
+  width: 80%;
+
+
+
+  margin: 40px auto;
+
+
+
+  text-align: center;
+
+
+
+}
+
+
+
+
+
+
+
+.welcome-container h1 {
+
+
+
+  color: #faa634;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CALLOUTS */
+
+
+
+
+
+
+
+#callout-container {
+
+
+
+  width: 980px;
+
+
+
+  margin: auto;
+
+
+
+  margin-bottom: 150px;
+
+
+
+}
+
+
+
+
+
+
+
+#callout-container li {
+
+
+
+  margin: 0;
+
+
+
+  padding: 0;
+
+
+
+  list-style: none;
+
+
+
+}
+
+
+
+
+
+
+
+#callout-container hr {
+
+
+
+  border: none;
+
+
+
+  border-top: 1px solid #e4a348;
+
+
+
+  margin: 10px 50px;
+
+
+
+}
+
+
+
+
+
+
+
+#callout-container .fpw-page-title {
+
+
+
+  font-family: Oswald, sans-serif;
+
+
+
+  font-size: 26px;
+
+
+
+  text-transform: uppercase;
+
+
+
+  color: #faa634;
+
+
+
+}
+
+
+
+
+
+
+
+#callout-container .widgettitle {
+
+
+
+  display: none;
+
+
+
+}
+
+
+
+
+
+
+
+#callout-container .widget {
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+  font-size: 12px;
+
+
+
+  position: relative;
+
+
+
+  float: left;
+
+
+
+  box-sizing: border-box;
+
+
+
+  width: 33%;
+
+
+
+  padding: 20px 40px;
+
+
+
+  text-align: center;
+
+
+
+  color: #4f4f4f;
+
+
+
+  background: #f4efe7;
+
+
+
+}
+
+
+
+
+
+
+
+#callout-container .wp-post-image {
+
+
+
+  width: 120px;
+
+
+
+  height: 120px;
+
+
+
+  border-radius: 100%;
+
+
+
+}
+
+
+
+
+
+
+
+#fpw_widget-3.widget {
+
+
+
+  color: #fff;
+
+
+
+  background: #faa634;
+
+
+
+}
+
+
+
+
+
+
+
+#fpw_widget-3.widget .fpw-page-title {
+
+
+
+  font-size: 28px;
+
+
+
+  color: #fff;
+
+
+
+}
+
+
+
+
+
+
+
+#fpw_widget-3.widget .wp-post-image {
+
+
+
+  width: 150px;
+
+
+
+  height: 150px;
+
+
+
+}
+
+
+
+
+
+
+
+#callout-container .widget:after {
+
+
+
+  position: absolute;
+
+
+
+  bottom: -59px;
+
+
+
+  left: 0;
+
+
+
+  width: 100%;
+
+
+
+  height: 59px;
+
+
+
+  content: '';
+
+
+
+  background: url('/wp-content/themes/Divi-ECRS/images/callout-side.png') no-repeat;
+
+
+
+  background-size: 100%;
+
+
+
+}
+
+
+
+
+
+
+
+#fpw_widget-3.widget:after {
+
+
+
+  position: absolute;
+
+
+
+  bottom: -59px;
+
+
+
+  left: 0;
+
+
+
+  width: 100%;
+
+
+
+  height: 59px;
+
+
+
+  content: '';
+
+
+
+  background: url('/wp-content/themes/Divi-ECRS/images/callout-middle.png') no-repeat;
+
+
+
+  background-size: 100%;
+
+
+
+}
+
+
+
+
+
+
+
+.fpw-excerpt {
+
+
+
+  font-size: 14px;
+
+
+
+  font-weight: 500;
+
+
+
+  line-height: 1.4;
+
+
+
+}
+
+
+
+
+
+
+
+.callout hr {
+
+
+
+  margin: 15px 75px;
+
+
+
+  border: none;
+
+
+
+  border-top: 1px solid #de9a07;
+
+
+
+}
+
+
+
+
+
+
+
+#callout-container .widget .fpw-page-title:before {
+
+
+
+  font-family: fontawesome;
+
+
+
+  margin-right: 5px;
+
+
+
+}
+
+
+
+
+
+
+
+#callout-container #fpw_widget-2.widget .fpw-page-title:before {
+
+
+
+  content: '\f18c';
+
+
+
+}
+
+
+
+
+
+
+
+#callout-container #fpw_widget-3.widget .fpw-page-title:before {
+
+
+
+  content: '\f073';
+
+
+
+}
+
+
+
+
+
+
+
+#callout-container #fpw_widget-4.widget .fpw-page-title:before {
+
+
+
+  content: '\f234';
+
+
+
+}
+
+
+
+
+
+
+
+.screen-reader-text {
+
+
+
+  position: absolute;
+
+
+
+  top: auto;
+
+
+
+  left: -10000px;
+
+
+
+  overflow: hidden;
+
+
+
+  width: 1px;
+
+
+
+  height: 1px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SECTIONS */
+
+
+
+
+
+
+
+.grassy-knoll {
+
+
+
+  position: relative;
+
+
+
+  color: #fff;
+
+
+
+  background: #43ad49 !important;
+
+
+
+  padding: 25px 0 !important;
+
+
+
+}
+
+
+
+
+
+
+
+.grassy-knoll:before {
+
+
+
+  position: absolute;
+
+
+
+  top: -95px;
+
+
+
+  display: block;
+
+
+
+  width: 100%;
+
+
+
+  height: 100px;
+
+
+
+  content: '';
+
+
+
+  background: url('/wp-content/themes/Divi-ECRS/images/grass-top.png') repeat-x;
+
+
+
+}
+
+
+
+
+
+
+
+.left-image {
+
+
+
+  position: absolute;
+
+
+
+  bottom: 0;
+
+
+
+  left: 50px;
+
+
+
+  width: 455px;
+
+
+
+}
+
+
+
+
+
+
+
+.right-image {
+
+
+
+  position: absolute;
+
+
+
+  right: 0;
+
+
+
+  bottom: 0;
+
+
+
+  width: 455px;
+
+
+
+}
+
+
+
+
+
+
+
+.blue-section {
+
+
+
+  color: #fff;
+
+
+
+  background: url(/wp-content/themes/Divi-ECRS/images/blue-bg.png) center #00bed9;
+
+background-color: #00bed9!important;
+
+
+
+  background-size: cover;
+
+
+
+}
+
+
+
+
+
+
+
+.blue-members {
+
+
+
+  background: url(/wp-content/themes/Divi-ECRS/images/blue-members.png) center #00bed9;
+
+
+
+  background-size: cover;
+
+
+
+}
+
+
+
+
+
+
+
+.blue-about {
+
+
+
+  background: url(/wp-content/themes/Divi-ECRS/images/blue-about.png) center #00bed9;
+
+
+
+  background-size: cover;
+
+  
+
+  background-color: #00bed9 !important;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+
+
+
+
+
+#footer-bottom .container,
+
+
+
+#footer-info {
+
+
+
+  text-align: center;
+
+
+
+  font-size: 13px;
+
+
+
+  float: none;
+
+
+
+}
+
+
+
+
+
+
+
+p#footer-info {
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+  color: #f9f7f1;
+
+
+
+  text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+
+
+#footer-info a,
+
+
+
+#footer-info a:visited,
+
+
+
+#footer-info a:active {
+
+
+
+  color: #f9f7f1 !important;
+
+
+
+}
+
+
+
+
+
+
+
+#footer-info a:hover {
+
+
+
+  color: #FFF;
+
+
+
+}
+
+
+
+
+
+
+
+.footer-widget .fpw-featured-image {
+
+
+
+  display: none;
+
+
+
+}
+
+
+
+
+
+
+
+#footer-widgets ul li {
+
+
+
+  font-size: 14px;
+
+
+
+  line-height: 1.6;
+
+
+
+  text-decoration: underline;
+
+
+
+}
+
+
+
+
+
+
+
+#footer-widgets .fpw-excerpt {
+
+
+
+  font-size: 13px;
+
+
+
+}
+
+
+
+
+
+
+
+#footer-widgets .fpw-excerpt hr {
+
+
+
+  display: none;
+
+
+
+}
+
+
+
+
+
+
+
+#footer-widgets .fpw-read-more-link {
+
+
+
+  display: block;
+
+
+
+  font-size: 13px;
+
+
+
+  padding: 1em 2.5em;
+
+
+
+  color: #fff;
+
+
+
+  margin-top: 25px;
+
+
+
+  clear: both !important;
+
+
+
+  width: 150px;
+
+
+
+}
+
+
+
+
+
+
+
+#footer-widgets .fpw-read-more-link:hover {
+
+
+
+  padding-left: 2em;
+
+
+
+  padding-right: 3em;
+
+
+
+}
+
+
+
+
+
+
+
+#footer-widgets .fpw-read-more-link:before {
+
+
+
+  content: '';
+
+
+
+  height: 1px;
+
+
+
+  width: 100%;
+
+
+
+  background-color: #906b29;
+
+
+
+  top: -15px;
+
+
+
+  position: absolute;
+
+
+
+  left: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.footer-widget #text-7 p {
+
+
+
+  padding-bottom: 15px !important;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_gutters3.et_pb_footer_columns_1_4__1_2 .footer-widget,
+
+
+
+.et_pb_gutters3.et_pb_footer_columns_1_4__1_2 .footer-widget:nth-child(3) {
+
+
+
+  width: 20.875%;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_gutters3.et_pb_footer_columns_1_4__1_2 .footer-widget:nth-child(2) {
+
+
+
+  margin-right: 0;
+
+
+
+  width: 47%;
+
+
+
+  padding-right: 70px;
+
+
+
+}
+
+
+
+
+
+
+
+.footer-widget .textwidget {
+
+
+
+  font-size: 13px;
+
+
+
+  line-height: 1.5;
+
+
+
+}
+
+
+
+
+
+
+
+#footer-widgets .footer-widget li {
+
+
+
+  list-style: none;
+
+
+
+  padding: 0;
+
+
+
+  margin: 0;
+
+
+
+}
+
+
+
+
+
+
+
+#footer-widgets .footer-widget li:before {
+
+
+
+  display: none;
+
+
+
+}
+
+
+
+
+
+
+
+#et-footer-nav {
+
+
+
+  display: none;
+
+
+
+}
+
+
+
+
+
+
+
+#main-footer .footer-widget h4 {
+
+
+
+    color: #ffffff;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* INTERNAL */
+
+
+
+
+
+
+
+#page-header {
+
+
+
+  background: #3f9844;
+
+
+
+  text-align: center;
+
+
+
+  padding: 15px;
+
+
+
+}
+
+
+
+
+
+
+
+.page-id-321 #page-header {
+
+
+
+  background: #faa635;
+
+
+
+}
+
+
+
+
+
+
+
+#page-header h1 {
+
+
+
+  font-size: 32px;
+
+
+
+  margin: 0;
+
+
+
+  padding: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.inner-header img {
+
+
+
+  width: 100%;
+
+
+
+}
+
+
+
+
+
+
+
+.circle-image img {
+
+
+
+  border-radius: 100%;
+
+
+
+}
+
+
+
+
+
+
+
+.styled-bullet-1,
+
+
+
+.styled-bullet-2,
+
+
+
+.styled-bullet-3 {
+
+
+
+  position: relative;
+
+
+
+  padding-left: 60px;
+
+
+
+  font-size: 14px;
+
+
+
+  line-height: 1.5;
+
+
+
+  font-weight: 500;
+
+
+
+}
+
+
+
+
+
+
+
+.styled-bullet-1:before,
+
+
+
+.styled-bullet-2:before,
+
+
+
+.styled-bullet-3:before {
+
+
+
+  position: absolute;
+
+
+
+  width: 25px;
+
+
+
+  height: 25px;
+
+
+
+  border: 2px solid #fff;
+
+
+
+  border-radius: 100%;
+
+
+
+  text-align: center;
+
+
+
+  left: 0px;
+
+
+
+  padding: 5px;
+
+
+
+  font-size: 1.5em;
+
+
+
+  line-height: 1;
+
+
+
+  position: absolute;
+
+
+
+  top: 20px;
+
+
+
+}
+
+
+
+
+
+
+
+.styled-bullet-1:before {
+
+
+
+  content: '1';
+
+
+
+}
+
+
+
+
+
+
+
+.styled-bullet-2:before {
+
+
+
+  content: '2';
+
+
+
+}
+
+
+
+
+
+
+
+.styled-bullet-3:before {
+
+
+
+  content: '3';
+
+
+
+}
+
+
+
+
+
+
+
+.divider {
+
+
+
+  width: 30%;
+
+
+
+  margin: auto;
+
+
+
+}
+
+
+
+
+
+
+
+.divider:before {
+
+
+
+  border-top-color: #6ECDD9 !important;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* LOGIN */
+
+
+
+
+
+
+
+#login-section {
+
+
+
+  background-color: #f2eddf;
+
+
+
+  padding: 40px;
+
+
+
+}
+
+
+
+
+
+
+
+.ecrs-login-form {
+
+
+
+  background-color: #00bed9;
+
+
+
+  width: 350px;
+
+
+
+  padding: 30px;
+
+
+
+  margin: auto;
+
+
+
+  overflow: hidden;
+
+
+
+}
+
+
+
+
+
+
+
+.ecrs-login-form h4 {
+
+
+
+  text-align: center;
+
+
+
+  margin: 0;
+
+
+
+  padding: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.ecrs-google-login {
+
+
+
+  text-align: center;
+
+
+
+}
+
+
+
+
+
+
+
+.ecrs-google-login .button {
+
+
+
+  margin-top: 10px;
+
+
+
+  padding: 0.6em 2.6em;
+
+
+
+}
+
+
+
+
+
+
+
+.ecrs-google-login .button:before {
+
+
+
+  display: none;
+
+
+
+}
+
+
+
+
+
+
+
+.line-through {
+
+
+
+  position: relative;
+
+
+
+  z-index: 1;
+
+
+
+  text-align: center;
+
+
+
+  margin: 10px 0;
+
+
+
+}
+
+
+
+
+
+
+
+.line-through:before {
+
+
+
+  border-top: 1px solid #faa634;
+
+
+
+  content: "";
+
+
+
+  margin: 0 auto;
+
+
+
+  position: absolute;
+
+
+
+  top: 50%;
+
+
+
+  left: 0;
+
+
+
+  right: 0;
+
+
+
+  bottom: 0;
+
+
+
+  width: 95%;
+
+
+
+  z-index: -1;
+
+
+
+}
+
+
+
+
+
+
+
+.line-through span {
+
+
+
+  background: #00bed9;
+
+
+
+  color: #fff;
+
+
+
+  padding: 0 5px;
+
+
+
+  text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+
+
+.ecrs-login-form label {
+
+
+
+  display: block;
+
+
+
+  color: #fff;
+
+
+
+  font-size: 0.75rem;
+
+
+
+  font-weight: 500;
+
+
+
+}
+
+
+
+
+
+
+
+.ecrs-login-form input {
+
+
+
+  display: block;
+
+
+
+  width: 100%;
+
+
+
+  padding: 10px;
+
+
+
+  border: none;
+
+
+
+  font-size: 1em;
+
+
+
+}
+
+
+
+
+
+
+
+.ecrs-login-form .login-remember label,
+
+
+
+.ecrs-login-form .login-remember input {
+
+
+
+  display: inline-block;
+
+
+
+  width: auto;
+
+
+
+}
+
+
+
+
+
+
+
+.ecrs-login-form .button-primary {
+
+
+
+  margin: 0;
+
+
+
+  float: right;
+
+
+
+  display: inline-block;
+
+
+
+  width: auto;
+
+
+
+  padding: 0.8em 2.3em;
+
+
+
+}
+
+
+
+
+
+
+
+.ecrs-login-form .button-primary:hover {
+
+
+
+  cursor: pointer;
+
+
+
+}
+
+
+
+
+
+
+
+.login-remember {
+
+
+
+  padding: 0;
+
+
+
+}
+
+
+
+
+
+
+
+#ninja_forms_form_5_all_fields_wrap {
+
+
+
+  width: 100%;
+
+
+
+  margin: auto;
+
+
+
+}
+
+
+
+
+
+
+
+#ninja_forms_form_5_all_fields_wrap input,
+
+
+
+#ninja_forms_form_5_all_fields_wrap textarea,
+
+
+
+#ninja_forms_form_5_all_fields_wrap select {
+
+
+
+  border: none;
+
+
+
+  padding: 10px 15px;
+
+
+
+  color: #b4b4b4;
+
+
+
+  font-size: 14px;
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+}
+
+
+
+
+
+
+
+#nf_submit_5 input {
+
+
+
+  background: #2bbed9;
+
+
+
+  color: #fff;
+
+
+
+  font-weight: 500;
+
+
+
+  text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+
+
+#nf_submit_5 input:hover {
+
+
+
+  cursor: pointer;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* our organization page */
+
+
+
+
+
+
+
+.our-org p {
+
+
+
+  margin: 0;
+
+
+
+  padding: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.our-org hr {
+
+
+
+  border: none;
+
+
+
+  border-top: 1px solid orange;
+
+
+
+  margin: 10px 0;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*events*/
+
+
+
+.register-button{
+
+float: right;
+
+}
+
+
+
+#left-area .post-meta,
+
+
+
+.eventorganiser-event-meta h4 {
+
+
+
+  display: none;
+
+
+
+}
+
+
+
+
+
+
+
+.et_post_meta_wrapper h1 {
+
+
+
+  font-size: 26px;
+
+
+
+  color: #43ad49;
+
+  display:none;
+
+}
+
+
+
+
+
+
+
+.event-box {
+
+
+
+  background-color: #f4efe7;
+
+
+
+  color: #424242;
+
+
+
+  margin-bottom: 20px;
+
+
+
+  overflow: hidden;
+
+
+
+  padding: 25px 25px 4px;
+
+
+
+}
+
+
+
+
+
+
+
+.eo-events h2 {
+
+
+
+  font-size: 26px;
+
+
+
+  color: #43ad49;
+
+
+
+  margin: 0;
+
+
+
+  padding: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.event-heading {
+
+
+
+  float: left;
+
+
+
+  width: 55%;
+
+
+
+}
+
+
+
+
+
+
+
+.venue {
+
+
+
+  font-weight: 500;
+
+
+
+}
+
+
+
+
+
+
+
+.date {
+
+
+
+  float: right;
+
+
+
+  background-color: orange;
+
+
+
+  padding: 10px;
+
+
+
+  font-family: Oswald, sans-serif;
+
+
+
+  text-transform: uppercase;
+
+
+
+  color: #fff;
+
+
+
+}
+
+
+
+
+
+
+
+.date a {
+
+
+
+  color: #fff;
+
+
+
+  padding: 10px 0;
+
+
+
+}
+
+
+
+
+
+
+
+.content {
+
+
+
+  clear: both;
+
+
+
+  padding: 20px 0;
+
+
+
+}
+
+
+
+
+
+
+
+.content .read-more {
+
+
+
+  border-top: 2px solid #ece7d7;
+
+
+
+  color: #00BED9;
+
+
+
+  display: block;
+
+
+
+  font-size: 16px;
+
+
+
+  font-weight: 700;
+
+
+
+  margin-top: 11px;
+
+
+
+  padding-top: 20px;
+
+
+
+  text-align: left;
+
+
+
+  text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+
+
+.content .read-more:after {
+
+
+
+  content: '\f18e';
+
+
+
+  color: #faa534;
+
+
+
+  font-family: fontawesome;
+
+
+
+  margin-left: 5px;
+
+
+
+  font-weight: normal;
+
+
+
+}
+
+
+
+
+
+
+
+.eo-event-meta li {
+
+
+
+  list-style: none;
+
+
+
+}
+
+
+
+
+
+
+
+body.single-event .eo-event-venue-map {
+
+
+
+  width: 100% !important;
+
+
+
+  float: none !important;
+
+
+
+  /*Changed by Isaac*/
+
+
+
+  /*margin-bottom: 25px;*/
+
+
+
+}
+
+
+
+
+
+
+
+body.single-event .eo-event-meta {
+
+
+
+  float: none !important;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_post .entry-content,
+
+
+
+.project .entry-content {
+
+
+
+  padding-top: 0 !important;
+
+
+
+}
+
+
+
+
+
+
+
+#eo-booking-title {
+
+
+
+  color: #faa534;
+
+
+
+}
+
+
+
+
+
+
+
+.eo-booking-ticket-picker thead {
+
+
+
+  background-color: #52b558;
+
+
+
+  color: #fff;
+
+
+
+  text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+
+
+.accordion .accordion-title {
+
+
+
+  font-size: 24px;
+
+
+
+  margin-top: 20px;
+
+
+
+}
+
+
+
+
+
+
+
+.accordion .accordion-title:hover {
+
+
+
+  cursor: pointer;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*cognito*/
+
+
+
+
+
+
+
+.cognito #c-forms-form h2 {
+
+
+
+  color: #FAA635 !important;
+
+
+
+  padding: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.cognito #c-forms-form button,
+
+
+
+.cognito #c-forms-form input[type=button] {
+
+
+
+  color: #fff !important;
+
+
+
+}
+
+
+
+
+
+
+
+.cognito .c-repeating-section-container .c-action-col {
+
+
+
+  width: 20px !important;
+
+
+
+  padding: 10px !important;
+
+
+
+}
+
+
+
+
+
+
+
+.cognito .c-repeating-section-item-title h3,
+
+
+
+.cognito .c-repeating-section-item-title h4,
+
+
+
+.cognito .c-repeating-section-item-title h5,
+
+
+
+.cognito .c-repeating-section-item-title h6 {
+
+
+
+  padding: 5px 10px !important;
+
+
+
+}
+
+
+
+
+
+
+
+.cognito input[type=text],
+
+
+
+.cognito input[type=password],
+
+
+
+.cognito select,
+
+
+
+.cognito textarea {
+
+
+
+  border: 1px solid #ccc !important;
+
+
+
+  padding: 10px !important;
+
+
+
+  font-family: 'Open Sans', sans-serif !important;
+
+
+
+  font-size: 14px !important;
+
+
+
+}
+
+
+
+
+
+
+
+.c-html p {
+
+
+
+  margin: 0px !important;
+
+
+
+}
+
+
+
+
+
+
+
+.cognito .c-editor {
+
+
+
+  box-sizing: border-box;
+
+
+
+  margin: 0;
+
+
+
+  padding-left: 8px !important;
+
+
+
+  padding-right: 7px;
+
+
+
+  word-wrap: break-word;
+
+
+
+}
+
+
+
+
+
+
+
+.c-html strong {
+
+
+
+  color: #8b0000;
+
+
+
+}
+
+
+
+
+
+
+
+.cognito .c-dropdown {
+
+
+
+  border: none !important;
+
+
+
+}
+
+
+
+
+
+
+
+.cognito .c-dropdown select {
+
+
+
+  padding: 5px 10px !important;
+
+
+
+  height: 36px !important;
+
+
+
+  border-radius: 0 !important;
+
+
+
+}
+
+
+
+
+
+
+
+.cognito .c-dropdown .c-dropdown-button i {
+
+
+
+  top: 35% !important;
+
+
+
+  left: 0 !important;
+
+
+
+}
+
+
+
+
+
+
+
+.cognito .c-repeating-section-item {
+
+
+
+  margin: 10px !important;
+
+
+
+}
+
+
+
+
+
+
+
+.cognito .c-label {
+
+
+
+  font-weight: 900;
+
+
+
+  color: #424242 !important;
+
+
+
+}
+
+
+
+
+
+
+
+.cognito #c-forms-form h3,
+
+
+
+.cognito #c-forms-form h4,
+
+
+
+.cognito #c-forms-form h5,
+
+
+
+.cognito #c-forms-form h6,
+
+
+
+.cognito #c-forms-form label,
+
+
+
+.cognito #c-forms-form th,
+
+
+
+.cognito #c-forms-form dt,
+
+
+
+.cognito #c-forms-form .c-label {
+
+
+
+  color: #424242 !important;
+
+
+
+  font-family: 'Open Sans', sans-serif !important;
+
+
+
+  font-weight: 700 !important;
+
+
+
+}
+
+
+
+
+
+
+
+.cognito #c-forms-form button,
+
+
+
+.cognito #c-forms-form input[type=button],
+
+
+
+.cognito #c-forms-form button:hover,
+
+
+
+.cognito #c-forms-form input[type=button]:hover {
+
+
+
+  background-color: #00BED9 !important;
+
+
+
+}
+
+
+
+
+
+
+
+.cognito .c-label {
+
+
+
+  padding: 10px 8px 13px 8px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*sidebar*/
+
+
+
+
+
+
+
+#sidebar .widgettitle {
+
+
+
+  color: #43ad49;
+
+
+
+  font-size: 20px;
+
+
+
+}
+
+
+
+
+
+
+
+#wp-calendar {
+
+
+
+  background-color: #fff;
+
+
+
+}
+
+
+
+
+
+
+
+#wp-calendar thead {
+
+
+
+  background-color: #f5f1ea;
+
+
+
+}
+
+
+
+
+
+
+
+#wp-calendar caption {
+
+
+
+  text-decoration: none;
+
+
+
+  font-family: Oswald, sans-serif;
+
+
+
+  font-weight: 500;
+
+
+
+  padding: 5px;
+
+
+
+  text-transform: uppercase;
+
+
+
+  background-color: #fbb03c;
+
+
+
+  color: #fff;
+
+
+
+  font-size: 18px;
+
+
+
+}
+
+
+
+
+
+
+
+#sidebar #wp-calendar tbody td,
+
+
+
+#sidebar #wp-calendar thead th {
+
+
+
+  font-family: Oswald, sans-serif;
+
+
+
+  padding: 5px;
+
+
+
+  text-align: center;
+
+
+
+}
+
+
+
+
+
+
+
+#wp-calendar .eo-future-date.event a {
+
+
+
+  color: #00bed9 !important;
+
+
+
+}
+
+
+
+
+
+
+
+#wp-calendar .today.event a {
+
+
+
+  color: #00bed9 !important;
+
+
+
+  border: 1px solid #eee;
+
+
+
+}
+
+
+
+
+
+
+
+#wp-calendar caption {
+
+
+
+  background-color: #faa635;
+
+
+
+}
+
+
+
+
+
+
+
+td#eo-widget-prev-month a {
+
+
+
+  text-align: left;
+
+
+
+  text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+
+
+td#eo-widget-next-month a {
+
+
+
+  text-align: right;
+
+
+
+  text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+
+
+.eo-booking-ticket-row {
+
+
+
+  background-color: #fff;
+
+
+
+}
+
+
+
+
+
+
+
+.eo-booking-ticket-picker thead tr {
+
+
+
+  font-family: Oswald, sans-serif;
+
+
+
+  text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+
+
+#eo-booking-form-element-wrap-ticketpicker table {
+
+
+
+  border: none;
+
+
+
+  background-color: #f6f3ed;
+
+
+
+}
+
+
+
+
+
+
+
+input.eo-booking-field-ticketpicker {
+
+
+
+  border: 1px solid #ccc;
+
+
+
+  font-size: 16px;
+
+
+
+  padding: 5px;
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+}
+
+
+
+
+
+
+
+.eo-booking-ticket-picker tbody {
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+}
+
+
+
+
+
+
+
+.eo-booking-notice {
+
+
+
+  background-color: #f6f3ed !important;
+
+
+
+  border-color: #DEDCD7 !important;
+
+
+
+  border-radius: 0 !important;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*footer overrides*/
+
+
+
+
+
+
+
+.footer-widget .eb_frontend,
+
+
+
+.footer-widget .eventDisplayCnt {
+
+
+
+  background: none !important;
+
+
+
+  box-shadow: none !important;
+
+
+
+  padding: 0 !important;
+
+
+
+  margin: 0 !important;
+
+
+
+}
+
+
+
+
+
+
+
+.footer-widget .map_canvas,
+
+
+
+.footer-widget .info,
+
+
+
+.footer-widget .dateDetails,
+
+
+
+.footer-widget .eventDetails,
+
+
+
+.footer-widget .buy,
+
+
+
+.footer-widget .addToCalDiv {
+
+
+
+  display: none !important;
+
+
+
+}
+
+
+
+
+
+
+
+.footer-widget .eventDisplayCnt h3.title {
+
+
+
+  color: #fff !important;
+
+
+
+  font-family: 'Open Sans', sans-serif !important;
+
+
+
+  text-transform: none !important;
+
+
+
+  text-align: left !important;
+
+
+
+  font-size: 15px !important;
+
+
+
+  padding: 0 !important;
+
+
+
+  line-height: 20px !important;
+
+
+
+}
+
+
+
+
+
+
+
+#left-area ul,
+
+
+
+.entry-content ul,
+
+
+
+.comment-content ul {
+
+
+
+  padding: 10px 0 25px 0;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*membership form*/
+
+
+
+
+
+
+
+#membership-form {
+
+
+
+  background: #f2eddf;
+
+
+
+}
+
+
+
+
+
+
+
+#membership-form .ninja-forms-cont {
+
+
+
+  width: 650px;
+
+
+
+  margin: auto;
+
+
+
+  padding: 50px 0;
+
+
+
+}
+
+
+
+
+
+
+
+#membership-form h2.ninja-forms-form-title {
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+  text-transform: none;
+
+
+
+  color: #43ad49;
+
+
+
+  font-weight: bold;
+
+
+
+  text-align: center;
+
+
+
+  margin-bottom: 20px;
+
+
+
+}
+
+
+
+
+
+
+
+#membership-form input,
+
+
+
+#membership-form textarea,
+
+
+
+#membership-form select {
+
+
+
+  border: none;
+
+
+
+  padding: 10px 15px;
+
+
+
+  color: #b4b4b4;
+
+
+
+  font-size: 14px;
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+}
+
+
+
+
+
+
+
+#membership-form select {
+
+
+
+  width: 100%;
+
+
+
+  border: none;
+
+
+
+  border-radius: 0;
+
+
+
+  height: 35px;
+
+
+
+  -webkit-appearance: none;
+
+
+
+  -moz-appearance: none;
+
+
+
+  appearance: none;
+
+
+
+}
+
+
+
+
+
+
+
+.field-wrap,
+
+
+
+#ninja_forms_required_items {
+
+
+
+  margin-bottom: 15px;
+
+
+
+}
+
+
+
+
+
+
+
+#membership-form .list-dropdown-wrap {
+
+
+
+  position: relative;
+
+
+
+}
+
+
+
+
+
+
+
+#membership-form .list-dropdown-wrap:after {
+
+
+
+  content: '';
+
+
+
+  height: 20px;
+
+
+
+  width: 20px;
+
+
+
+  position: absolute;
+
+
+
+  background-color: white;
+
+
+
+  right: 2px;
+
+
+
+  top: 5px;
+
+
+
+}
+
+
+
+
+
+
+
+#membership-form .list-dropdown-wrap:before {
+
+
+
+  content: '\f0d7';
+
+
+
+  position: absolute;
+
+
+
+  right: 10px;
+
+
+
+  z-index: 999;
+
+
+
+  font-family: fontawesome;
+
+
+
+  top: 5px;
+
+
+
+  color: #faa534;
+
+
+
+  font-size: 1.3em;
+
+
+
+}
+
+
+
+
+
+
+
+#membership-form input.button {
+
+
+
+  color: #fff !important;
+
+
+
+  padding: 15px 50px;
+
+
+
+  font-size: 20px;
+
+
+
+  float: right;
+
+
+
+  margin-top: 0;
+
+
+
+}
+
+
+
+
+
+
+
+#membership-form .ninja-forms-required-items {
+
+
+
+  display: none;
+
+
+
+}
+
+
+
+
+
+
+
+#membership-form .submit-wrap {
+
+
+
+  display: inline-block;
+
+
+
+  float: right;
+
+
+
+}
+
+
+
+
+
+
+
+#membership-form .member-link {
+
+
+
+  float: left;
+
+
+
+  font-size: 14px;
+
+
+
+}
+
+
+
+
+
+
+
+.eo-booking-field-name-subfield,
+
+
+
+.eo-booking-form-address-component-postcode,
+
+
+
+.eo-booking-form-address-component-state {
+
+
+
+  width: 100% !important;
+
+
+
+}
+
+
+
+
+
+
+
+div#eo-booking-form-element-wrap-name {}
+
+
+
+
+
+
+
+#eo-booking-form input {
+
+
+
+  padding: 10px;
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+  font-size: 16px;
+
+
+
+  border: 1px solid #eee;
+
+
+
+  width: 50%;
+
+
+
+}
+
+
+
+
+
+
+
+#eo-booking-form-element-wrap-ticketpicker table {
+
+
+
+  margin-top: 50px;
+
+
+
+}
+
+
+
+
+
+
+
+label.eo-booking-sub-label.eo-booking-sub-label-lname,
+
+
+
+label.eo-booking-sub-label.eo-booking-sub-label-fname {
+
+
+
+  display: none;
+
+
+
+}
+
+
+
+
+
+
+
+span.eo-booking-field-name-subfield {
+
+
+
+  margin-bottom: 7px;
+
+
+
+}
+
+
+
+
+
+
+
+.caret-down:after {
+
+
+
+  content: '';
+
+
+
+  position: absolute;
+
+
+
+  margin: auto;
+
+
+
+  left: 0;
+
+
+
+  right: 0;
+
+
+
+  bottom: -18px;
+
+
+
+  width: 0;
+
+
+
+  height: 0;
+
+
+
+  border-left: 20px solid transparent;
+
+
+
+  border-right: 20px solid transparent;
+
+
+
+  border-top: 20px solid #f9f7f0;
+
+
+
+  z-index: 999;
+
+
+
+}
+
+
+
+
+
+
+
+#post-321 .et_pb_row_4 {
+
+
+
+  width: 98% !important;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*login modal*/
+
+
+
+
+
+
+
+#simplemodal-login-container {
+
+
+
+  z-index: 999999 !important;
+
+
+
+  right: 0 !important;
+
+
+
+  left: auto !important;
+
+
+
+  bottom: auto !important;
+
+
+
+  top: 189px !important;
+
+
+
+  position: absolute !important;
+
+
+
+}
+
+
+
+
+
+
+
+#simplemodal-login-container form {
+
+
+
+  background-color: rgba(250, 166, 53, 0.95) !important;
+
+
+
+  border: none !important;
+
+
+
+  border-radius: 0 !important;
+
+
+
+  box-shadow: none !important;
+
+
+
+  padding: 20px !important;
+
+
+
+}
+
+
+
+
+
+
+
+#simplemodal-login-form p.galogin {
+
+
+
+  background: #00bed9 !important;
+
+
+
+  padding: 8px !important;
+
+
+
+  text-align: center !important;
+
+
+
+  font-family: 'Open Sans', sans-serif !important;
+
+
+
+  text-transform: uppercase !important;
+
+
+
+}
+
+
+
+
+
+
+
+#simplemodal-login-form p.galogin a {
+
+
+
+  color: #fff !important;
+
+
+
+  font-weight: 500 !important;
+
+
+
+}
+
+
+
+
+
+
+
+#simplemodal-login-form .galogin-or {
+
+
+
+  text-align: center !important;
+
+
+
+  font-family: 'Open Sans', sans-serif !important;
+
+
+
+  font-size: 18px !important;
+
+
+
+  padding: 10px !important;
+
+
+
+}
+
+
+
+
+
+
+
+#simplemodal-login-container .user_pass,
+
+
+
+#simplemodal-login-container .user_login,
+
+
+
+#simplemodal-login-container .user_email {
+
+
+
+  font-size: 20px !important;
+
+
+
+  width: 97% !important;
+
+
+
+  padding: 5px !important;
+
+
+
+  margin-top: 2px !important;
+
+
+
+  margin-right: 6px !important;
+
+
+
+  margin-bottom: 16px !important;
+
+
+
+  border: 1px solid #e5e5e5 !important;
+
+
+
+  background: #fbfbfb !important;
+
+
+
+  font-family: 'Open Sans', sans-serif !important;
+
+
+
+}
+
+
+
+
+
+
+
+#simplemodal-login-container .nav a {
+
+
+
+  color: #fff !important;
+
+
+
+  font-weight: 500 !important;
+
+
+
+}
+
+
+
+
+
+
+
+#simplemodal-login-container .title {
+
+
+
+  display: none !important;
+
+
+
+}
+
+
+
+
+
+
+
+#simplemodal-login-container form label {
+
+
+
+  color: #fff !important;
+
+
+
+  font-size: 13px !important;
+
+
+
+  font-weight: 600 !important;
+
+
+
+}
+
+
+
+
+
+
+
+#simplemodal-login-container form p {
+
+
+
+  margin: 0 !important;
+
+
+
+  padding: 0 !important;
+
+
+
+}
+
+
+
+
+
+
+
+#simplemodal-login-container form .submit input {
+
+
+
+  background-color: #00bed9 !important;
+
+
+
+  font-family: 'Open Sans', sans-serif !important;
+
+
+
+  font-size: 18px !important;
+
+
+
+  border: none !important;
+
+
+
+  border-radius: 0 !important;
+
+
+
+  padding: 10px 15px !important;
+
+
+
+  font-weight: 500 !important;
+
+
+
+  text-transform: uppercase !important;
+
+
+
+  font-size: 15px !important;
+
+
+
+}
+
+
+
+
+
+
+
+#simplemodal-login-overlay {
+
+
+
+  background-color: #333 !important;
+
+
+
+}
+
+
+
+
+
+
+
+#simplemodal-login-container form .submit input.simplemodal-close {
+
+
+
+  background-color: #C78A2A !important;
+
+
+
+}
+
+
+
+
+
+
+
+#simplemodal-login-overlay {
+
+
+
+  opacity: 0 !important;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* scroll down hover */
+
+
+
+
+
+
+
+.scroll-down {
+
+
+
+  color: #fff;
+
+
+
+  transition: all .3s ease;
+
+
+
+  font-size: 15px;
+
+
+
+}
+
+
+
+
+
+
+
+.scroll-down:hover {
+
+
+
+  margin-top: 5px !important;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*icons*/
+
+
+
+
+
+
+
+.addtoany_list a img {
+
+
+
+  width: 40px;
+
+
+
+  height: 40px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*mobile menu*/
+
+
+
+
+
+
+
+#et_mobile_nav_menu,
+
+
+
+.et_mobile_nav_menu {
+
+
+
+  float: left;
+
+
+
+}
+
+
+
+
+
+
+
+.et_mobile_menu {
+
+
+
+  width: 30%;
+
+
+
+  padding: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.et_mobile_menu li ul {
+
+
+
+  padding-left: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.et_mobile_menu li li {
+
+
+
+  padding: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.et_mobile_menu li a {
+
+
+
+  background: #FAA635;
+
+
+
+  color: #fff!important;
+
+
+
+  text-align: left;
+
+
+
+  padding: 10px 20px;
+
+
+
+  font-size: 18px;
+
+
+
+}
+
+
+
+
+
+
+
+.et_mobile_menu li a:hover {
+
+
+
+  background-color: #E89A31;
+
+
+
+}
+
+
+
+
+
+
+
+.et_mobile_menu .menu-item-has-children > a {
+
+
+
+  background-color: #FAA635;
+
+
+
+  font-weight: normal;
+
+
+
+}
+
+
+
+
+
+
+
+.et_header_style_split .mobile_menu_bar,
+
+
+
+.et_header_style_left .mobile_menu_bar {
+
+
+
+  padding-bottom: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.mobile_menu_bar:before {
+
+
+
+  font-size: 48px;
+
+
+
+  color: #F9F7F1;
+
+
+
+  left: 10px;
+
+
+
+}
+
+
+
+
+
+
+
+.mm-login h3 {
+
+
+
+  margin: 10px 0px 20px 0px;
+
+
+
+  color: #fbb03c;
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+  text-transform: none;
+
+
+
+}
+
+
+
+
+
+
+
+li.loginout {
+
+
+
+  display: none !important;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* gallery */
+
+
+
+
+
+
+
+#post-441 .main_title,
+
+
+
+.cd-timeline-title {
+
+
+
+  display: none !important;
+
+
+
+}
+
+
+
+
+
+
+
+.autoAlbums-breadcrumb {
+
+
+
+  background: none;
+
+
+
+  border-bottom: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.autoAlbumsFolder {
+
+
+
+  box-shadow: none;
+
+
+
+}
+
+
+
+
+
+
+
+.autoAlbums-breadcrumb li {
+
+
+
+  font-size: 16px;
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+  font-weight: 700;
+
+
+
+}
+
+
+
+
+
+
+
+.autoAlbums-breadcrumb li.active {
+
+
+
+  text-shadow: none;
+
+
+
+}
+
+
+
+
+
+
+
+.folder-name,
+
+
+
+.folder-count,
+
+
+
+.folder-view {
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+}
+
+
+
+
+
+
+
+#left-area ul,
+
+
+
+.entry-content ul,
+
+
+
+.comment-content ul {
+
+
+
+  padding: 10px 0;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* easy media gallery */
+
+
+
+
+
+
+
+.view {
+
+
+
+  box-shadow: none!important;
+
+
+
+}
+
+
+
+
+
+
+
+span.emg-badges {
+
+
+
+  background: none!important;
+
+
+
+}
+
+
+
+
+
+
+
+/*choose a membership*/
+
+
+
+
+
+
+
+.et_pb_pricing_content_top {
+
+
+
+  border-bottom: none;
+
+
+
+  padding-bottom: 0;
+
+
+
+  padding-top: 0;
+
+
+
+  font-family: Oswald;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_et_price {
+
+
+
+  color: #fff;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_dollar_sign {
+
+
+
+  color: #fff;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_sum {
+
+
+
+  font-size: 60px;
+
+
+
+  color: #fff;
+
+
+
+}
+
+
+
+
+
+
+
+ul.et_pb_pricing li {
+
+
+
+  padding: 5px 0;
+
+
+
+  border-bottom: 1px solid white;
+
+
+
+  text-align: center;
+
+
+
+  color: #fff;
+
+
+
+  font-size: 14px;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_pricing li:before {
+
+
+
+  display: none;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_pricing_heading {
+
+
+
+  padding: 30px 0;
+
+
+
+  background: transparent;
+
+
+
+  margin-bottom: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_pricing li:last-child {
+
+
+
+  padding-bottom: 0;
+
+
+
+  border-bottom: none;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_pricing_heading h2 {
+
+
+
+  font-size: 20px;
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+  font-weight: 500;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_pricing_table {
+
+
+
+  border: none;
+
+
+
+  margin: 0 5px;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_column_4_4 .et_pb_pricing_table {
+
+
+
+  width: 24%;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_pricing_table_3 .et_pb_pricing_heading {
+
+
+
+  padding-bottom: 10px;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_pricing_table_0 a.et_pb_pricing_table_button.et_pb_button,
+
+
+
+.et_pb_pricing_table_2 a.et_pb_pricing_table_button.et_pb_button {
+
+
+
+  background-color: #2bbed9;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*optin*/
+
+
+
+
+
+
+
+.widget_yikes_mc_widget input.ykfmc-submit {
+
+
+
+  font-family: 'Open Sans', sans-serif!important;
+
+
+
+  font-size: 20px!important;
+
+
+
+  font-weight: bold;
+
+
+
+  padding: 8px 10px!important;
+
+
+
+}
+
+
+
+
+
+
+
+#ninja_forms_form_7 input,
+
+
+
+#ninja_forms_form_7 select {
+
+
+
+  padding: 10px;
+
+
+
+  border: 1px solid #eee;
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+  font-size: 14px;
+
+
+
+  color: #424242;
+
+
+
+}
+
+
+
+
+
+
+
+#ninja_forms_form_7 select {
+
+
+
+  width: 100%;
+
+
+
+  border: none;
+
+
+
+  border-radius: 0;
+
+
+
+  height: 35px;
+
+
+
+  -webkit-appearance: none;
+
+
+
+  -moz-appearance: none;
+
+
+
+  appearance: none;
+
+
+
+  padding: 10px;
+
+
+
+}
+
+
+
+
+
+
+
+.form-day {
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+  color: orange;
+
+
+
+  font-weight: 500;
+
+
+
+  text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+
+
+.quicknav {
+
+
+
+  padding: 0 !important;
+
+
+
+  margin: 0 !important;
+
+
+
+}
+
+
+
+
+
+
+
+.quicknav a {
+
+
+
+  color: #fff;
+
+
+
+  float: left;
+
+
+
+  display: inline-block;
+
+
+
+  padding: 15px 10px;
+
+
+
+  text-transform: uppercase;
+
+
+
+  font-weight: 600;
+
+
+
+  letter-spacing: -1px;
+
+  font-size: 20px;
+
+}
+
+
+
+
+
+.quicknav a:hover {
+
+
+
+  background: #3f9844;
+
+
+
+}
+
+
+
+
+
+
+
+.quicknav-button {
+
+
+
+  margin-top: 0 !important;
+
+
+
+}
+
+
+
+.quicknavrow.et_pb_row {
+
+	max-width: 1140px;
+
+}
+
+
+
+.quicknavrow .et_pb_column_0 {width: 70%;}
+
+.quicknavrow .et_pb_column_1 {width: 25%;}
+
+
+
+.c-forms-heading h2 {
+
+
+
+  font-size: 31px;
+
+
+
+  margin-bottom: 36px!important;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* membership */
+
+
+
+
+
+
+
+.et_pb_pricing_table.et_pb_pricing_table_0,
+
+
+
+.et_pb_pricing_table.et_pb_pricing_table_1,
+
+
+
+.et_pb_pricing_table.et_pb_pricing_table_2,
+
+
+
+.et_pb_pricing_table.et_pb_pricing_table_3 {
+
+
+
+  position: relative;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_pricing_table.et_pb_pricing_table_0:after,
+
+
+
+.et_pb_pricing_table.et_pb_pricing_table_1:after,
+
+
+
+.et_pb_pricing_table.et_pb_pricing_table_2:after,
+
+
+
+.et_pb_pricing_table.et_pb_pricing_table_3:after {
+
+
+
+  content: '';
+
+
+
+  position: absolute;
+
+
+
+  bottom: -50px;
+
+
+
+  height: 50px;
+
+
+
+  display: inline-block;
+
+
+
+  left: 0;
+
+
+
+  z-index: 99999;
+
+
+
+  width: 100%;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_pricing_table.et_pb_pricing_table_0:after,
+
+
+
+.et_pb_pricing_table.et_pb_pricing_table_3:after {
+
+
+
+  background: url(/wp-content/themes/Divi-ECRS/images/membership-green.png) no-repeat;
+
+
+
+  background-size: 100%;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_pricing_table.et_pb_pricing_table_1:after {
+
+
+
+  background: url(/wp-content/themes/Divi-ECRS/images/membership-blue.png) no-repeat;
+
+
+
+  background-size: 100%;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_pricing_table.et_pb_pricing_table_2:after {
+
+
+
+  background: url(/wp-content/themes/Divi-ECRS/images/membership-orange.png) no-repeat;
+
+
+
+  background-size: 100%;
+
+
+
+}
+
+
+
+
+
+
+
+.mm_left_column {
+
+
+
+  width: 45% !important;
+
+
+
+  border-right: 1px solid orange;
+
+
+
+  padding-right: 30px;
+
+
+
+}
+
+
+
+
+
+
+
+.mm_right_column {
+
+
+
+  width: 50% !important;
+
+
+
+}
+
+
+
+
+
+
+
+.mm-checkoutContainer h3 {
+
+
+
+  font-size: 20px !important;
+
+
+
+  font-family: 'Open Sans', sans-serif !important;
+
+
+
+  text-transform: none !important;
+
+
+
+  color: #479933 !important;
+
+
+
+}
+
+
+
+
+
+
+
+.mm-checkoutInfoBlock {
+
+
+
+  padding: 0 !important;
+
+
+
+  border: none !important;
+
+
+
+  border-radius: 0 !important;
+
+
+
+}
+
+
+
+
+
+
+
+.mm-formField input {
+
+
+
+  display: block;
+
+
+
+  width: 100%;
+
+
+
+  border: 1px solid #ccc;
+
+
+
+  padding: 7px;
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+  font-size: 14px;
+
+
+
+  color: #424242;
+
+
+
+}
+
+
+
+
+
+
+
+.mm_right_column h2 {
+
+
+
+  font-size: 15px;
+
+
+
+  color: orange;
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+  text-transform: none;
+
+
+
+  margin: 0;
+
+
+
+  padding: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.mm_right_column #left-area ul,
+
+
+
+.mm_right_column.entry-content ul,
+
+
+
+.mm_right_column .comment-content ul {
+
+
+
+  padding: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.mm-checkoutSection2 ul li .mm-data {
+
+
+
+  margin: 0 !important;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* class descriptions */
+
+
+
+
+
+
+
+.et_pb_toggle_title:before{
+
+
+
+  font-family: fontawesome !important;
+
+
+
+  content: '\f078';
+
+
+
+  color: #fff;
+
+
+
+}
+
+
+
+
+
+
+
+.first-period h5,
+
+
+
+.morning-period h5,
+
+
+
+.afternoon-period h5,
+
+.accordion h5 {
+
+
+
+  font-size: 18px;
+
+
+
+  text-transform: none;
+
+
+
+  font-weight: 600;
+
+
+
+}
+
+
+
+
+
+
+
+.first-period .et_pb_toggle_title:before,
+
+
+
+.afternoon-period .et_pb_toggle_title:before {
+
+
+
+  color: #fff;
+
+
+
+}
+
+
+
+
+
+
+
+.morning-period .et_pb_toggle_title:before {
+
+
+
+  color: #424242;
+
+
+
+}
+
+
+
+
+
+
+
+.first-period,
+
+
+
+.afternoon-period {
+
+
+
+  background-color: #fbb03c!important;
+
+
+
+}
+
+
+
+
+
+
+
+.first-period h3,
+
+
+
+.afternoon-period h3 {
+
+
+
+  color: #fff !important;
+
+
+
+  font-family: 'Open Sans', sans-serif !important;
+
+
+
+  text-transform: uppercase !important;
+
+
+
+  font-size: 22px;
+
+
+
+  font-weight: 700;
+
+
+
+  margin: 10px;
+
+
+
+  border-bottom: 1px solid #fff;
+
+
+
+}
+
+
+
+
+
+
+
+.morning-period h3 {
+
+
+
+  color: #424242 !important;
+
+
+
+  font-family: 'Open Sans', sans-serif !important;
+
+
+
+  text-transform: uppercase !important;
+
+
+
+  font-size: 22px;
+
+
+
+  font-weight: 700;
+
+
+
+  margin: 10px;
+
+
+
+  border-bottom: 1px solid #424242;
+
+
+
+}
+
+
+
+
+
+
+
+.first-period h5,
+
+
+
+.afternoon-period h5 {
+
+
+
+  color: #fff !important;
+
+
+
+  padding: 10px !important;
+
+
+
+}
+
+
+
+
+
+
+
+.morning-period h5 {
+
+
+
+  padding: 10px !important;
+
+
+
+  color: #424242 !important;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_toggle {
+
+
+
+  background: none;
+
+
+
+  border: 0;
+
+
+
+  padding: 0;
+
+
+
+  margin-bottom: 0 !important;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_toggle_content {
+
+
+
+  padding-top: 15px;
+
+  padding-bottom: 15px;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_toggle_open {
+
+
+
+  background-color: #fff;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_toggle_open h5.et_pb_toggle_title {
+
+
+
+  color: #424242 !important;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_toggle p {
+
+
+
+  padding: 0 10px 20px !important;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_text_7 h3 {
+
+
+
+  text-transform: uppercase;
+
+
+
+  font-weight: 600;
+
+
+
+  font-size: 20px;
+
+
+
+}
+
+
+
+
+
+.first-period.accordion{
+
+background-color: transparent!important;
+
+}
+
+
+
+.first-period.accordion h5{
+
+border-bottom: 1px dashed #FAA635;
+
+color: #4f4f4f!important;
+
+}
+
+
+
+.first-period.accordion .et_pb_toggle_title:before {
+
+color: #4f4f4f;
+
+}
+
+
+
+/* membermouse overrides */
+
+
+
+
+
+
+
+.mm-forgot-password {
+
+
+
+  width: auto !important;
+
+
+
+}
+
+
+
+
+
+
+
+.mm-forgot-password h3,
+
+
+
+.status-publish h3 {
+
+
+
+  color: #fbb03c;
+
+
+
+  font-family: 'Open Sans', sans-serif;
+
+
+
+  text-transform: none;
+
+
+
+}
+
+
+
+
+
+
+
+.mm-forgot-password .mm-field {
+
+
+
+  width: 200px;
+
+
+
+  padding: 10px;
+
+
+
+  font-size: 15px;
+
+
+
+  color: #424242 !important;
+
+
+
+}
+
+
+
+
+
+
+
+.mm-button {
+
+
+
+  text-shadow: none;
+
+
+
+}
+
+
+
+
+
+
+
+.mm-button:hover {
+
+
+
+  background: #faa635;
+
+
+
+  color: #fff;
+
+
+
+  box-shadow: none;
+
+
+
+  text-shadow: none;
+
+
+
+  border: 0;
+
+
+
+}
+
+
+
+
+
+
+
+table.cart th,
+
+
+
+#main-content table.cart th,
+
+
+
+table.cart td,
+
+
+
+#main-content table.cart td,
+
+
+
+table.cart tr,
+
+
+
+#main-content table.cart tr,
+
+
+
+#content-area table tr,
+
+
+
+#content-area table td,
+
+
+
+#content-area table th {
+
+
+
+  border: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.et_pb_text_11 h3 {
+
+
+
+  color: #fff;
+
+
+
+  font-family: Oswald, sans-serif;
+
+
+
+  text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* table */
+
+
+
+
+
+
+
+.table-classes {
+
+
+
+  color: #000;
+
+
+
+  font-size: 13px;
+
+
+
+}
+
+
+
+
+
+
+
+.table-classes th {
+
+
+
+  text-align: center;
+
+
+
+}
+
+
+
+
+
+
+
+.table-classes tr td {
+
+
+
+  border-top: 1px solid #eee;
+
+
+
+  padding: 5px 15px;
+
+
+
+  line-height: 1.5em;
+
+
+
+}
+
+
+
+
+
+
+
+.table-classes tr td:first-child {
+
+
+
+  font-weight: bold;
+
+
+
+  width: 20%;
+
+
+
+}
+
+
+
+
+
+
+
+.table-classes .green {
+
+
+
+  background: #89DC89;
+
+
+
+}
+
+
+
+
+
+
+
+.table-classes .red {
+
+
+
+  background: #E67F7F;
+
+
+
+}
+
+
+
+
+
+
+
+.table-classes .blue {
+
+
+
+  background: #719AF9;
+
+
+
+}
+
+
+
+
+
+
+
+.table-classes .skyblue {
+
+
+
+  background: skyblue;
+
+
+
+}
+
+
+
+
+
+
+
+.table-classes .lavender {
+
+
+
+  background: lavender;
+
+
+
+}
+
+
+
+
+
+
+
+.table-classes .purple {
+
+
+
+  background: #C789C7;
+
+
+
+}
+
+
+
+
+
+
+
+.table-classes .orange {
+
+
+
+  background: orange;
+
+
+
+}
+
+
+
+
+
+
+
+.table-classes .yellow {
+
+
+
+  background: yellow;
+
+
+
+}
+
+
+
+
+
+
+
+.table-classes .cream {
+
+
+
+  background: #F7F7CA;
+
+
+
+}
+
+
+
+
+
+
+
+.table-classes .lightgreen {
+
+
+
+  background: #B2FFB2;
+
+
+
+}
+
+
+
+
+
+
+
+.table-classes .pink {
+
+
+
+  background: pink;
+
+
+
+}
+
+
+
+
+
+
+
+.table-classes .lightorange {
+
+
+
+  background: #F9CB76;
+
+
+
+}
+
+
+
+
+
+
+
+.table-classes .forestgreen {
+
+
+
+  background: #85C585;
+
+
+
+}
+
+
+
+
+
+
+
+table.cart th,
+
+
+
+#main-content table.cart th,
+
+
+
+table.cart td,
+
+
+
+#main-content table.cart td,
+
+
+
+table.cart tr,
+
+
+
+#main-content table.cart tr,
+
+
+
+#content-area table tr,
+
+
+
+#content-area table td,
+
+
+
+#content-area table th {
+
+
+
+  padding: 0.557em 0.787em;
+
+
+
+  max-width: 100px;
+
+
+
+}
+
+
+
+
+
+
+
+.room-board th {
+
+
+
+  text-align: center;
+
+
+
+  background-color: #F1EEE7;
+
+
+
+}
+
+
+
+
+
+
+
+.room-board .subheading {
+
+
+
+  font-weight: bold;
+
+
+
+}
+
+
+
+
+
+
+
+.page-id-441 #main-content .container {
+
+
+
+  display: none;
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 1470px) {}
+
+
+
+
+
+
+
+@media (max-width: 1100px) {
+
+
+
+  .et_header_style_left #et-top-navigation nav > ul > li > a,
+
+
+
+  .et_header_style_split #et-top-navigation nav > ul > li > a {
+
+
+
+    font-size: 15px;
+
+
+
+  }
+
+
+
+  .et_pb_column_4_4 .et_pb_pricing_table {
+
+
+
+    width: 46% !important;
+
+
+
+    margin: 2%;
+
+
+
+    margin-bottom: 90px;
+
+
+
+  }
+
+
+
+  .et_pb_pricing_table.et_pb_pricing_table_0:after,
+
+
+
+  .et_pb_pricing_table.et_pb_pricing_table_1:after,
+
+
+
+  .et_pb_pricing_table.et_pb_pricing_table_2:after,
+
+
+
+  .et_pb_pricing_table.et_pb_pricing_table_3:after {
+
+
+
+    bottom: -80px;
+
+
+
+    height: 80px;
+
+
+
+  }
+
+
+
+  #post-321 .et_pb_row_4 {
+
+
+
+    width: 100% !important;
+
+
+
+  }
+
+
+
+  #sign-in {
+
+
+
+    height: 54px;
+
+
+
+    padding: 10px 15px;
+
+
+
+  }
+
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 981px) {
+
+
+
+.footer-widget h4 {
+
+
+
+    font-size: 22px;
+
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 980px) {
+
+
+
+  body {
+
+
+
+    font-size: 14px;
+
+
+
+  }
+
+
+
+  #sign-in {
+
+
+
+    height: auto;
+
+
+
+    padding: 5px 10px;
+
+
+
+    position: relative;
+
+
+
+    float: right;
+
+
+
+  }
+
+
+
+  .widget_yikes_mc_widget input.ykfmc-submit {
+
+
+
+    padding: 6px 10px!important;
+
+
+
+  }
+
+
+
+  .et_header_style_left #et-top-navigation,
+
+
+
+  .et_header_style_split #et-top-navigation {
+
+
+
+    max-width: 100%;
+
+
+
+  }
+
+
+
+  .et_header_style_left #et-top-navigation nav > ul > li > a,
+
+
+
+  .et_header_style_split #et-top-navigation nav > ul > li > a {
+
+
+
+    font-size: 14px;
+
+
+
+  }
+
+
+
+  .force-full-width .push-left {
+
+
+
+    display: none;
+
+
+
+  }
+
+
+
+  .force-full-width .right-section {
+
+
+
+    width: 80%;
+
+
+
+    margin: auto;
+
+
+
+    padding: 0;
+
+
+
+  }
+
+
+
+  .styled-bullet span {
+
+
+
+    margin: 0 20px 20px 0;
+
+
+
+  }
+
+
+
+  #callout-container {
+
+
+
+    width: 95%;
+
+
+
+  }
+
+
+
+  #callout-container .widget {
+
+
+
+    padding: 20px;
+
+
+
+  }
+
+
+
+  #fpw_widget-3.widget .fpw-page-title {
+
+
+
+    font-size: 24px;
+
+
+
+  }
+
+
+
+  #callout-container .fpw-page-title {
+
+
+
+    font-size: 22px
+
+
+
+  }
+
+
+
+  button,
+
+
+
+  .button,
+
+
+
+  .button-primary,
+
+
+
+  .fpw-read-more-link,
+
+
+
+  .buy a,
+
+
+
+  .swpm-subscription-button-submit,
+
+
+
+  .cognito #c-forms-form button {
+
+
+
+    font-size: 14px;
+
+
+
+  }
+
+
+
+  .button:after,
+
+
+
+  .button-primary:after,
+
+
+
+  .fpw-read-more-link:after,
+
+
+
+  .buy a:after,
+
+
+
+  .swpm-subscription-button-submit:after,
+
+
+
+  .cognito #c-forms-form button:after {
+
+
+
+    line-height: 0.7em;
+
+
+
+  }
+
+
+
+  .grassy-knoll {
+
+
+
+    margin-top: 60px;
+
+
+
+  }
+
+
+
+  .grassy-knoll .et_pb_text_1 {
+
+
+
+    float: left;
+
+
+
+    max-width: 100%;
+
+
+
+    display: block;
+
+
+
+    margin-right: 210px;
+
+
+
+    text-align: left;
+
+
+
+  }
+
+
+
+  .grassy-knoll .et_pb_text {
+
+
+
+    text-align: left;
+
+
+
+    margin-left: 0;
+
+
+
+  }
+
+
+
+  .grassy-knoll .button-wrapper {
+
+
+
+    text-align: left;
+
+
+
+  }
+
+
+
+  .left-image {
+
+
+
+    display: none;
+
+
+
+  }
+
+
+
+  .right-image {
+
+
+
+    position: absolute;
+
+
+
+    right: 0;
+
+
+
+    bottom: 0;
+
+
+
+    width: 325px;
+
+
+
+  }
+
+
+
+  /*mobile menu*/
+
+
+
+  .et_menu_container {
+
+
+
+    position: absolute;
+
+
+
+    top: 0;
+
+
+
+    width: 100%;
+
+
+
+  }
+
+
+
+  .logo_container {
+
+
+
+    padding-top: 45px;
+
+
+
+  }
+
+
+
+  #simplemodal-login-container {
+
+
+
+    top: 55px !important;
+
+
+
+  }
+
+
+
+  /*divi*/
+
+
+
+  .et_pb_text_0 {
+
+
+
+    max-width: 70% !important;
+
+
+
+    margin: auto;
+
+
+
+  }
+
+
+
+  #post-240 .et_pb_text_0 {
+
+
+
+    max-width: 100% !important;
+
+
+
+  }
+
+
+
+  .et_pb_text_2 {
+
+
+
+    max-width: 90% !important;
+
+
+
+  }
+
+
+
+  .blue-about .et_pb_text_3 {
+
+
+
+    max-width: 100% !important;
+
+
+
+    margin-bottom: 0 !important;
+
+
+
+  }
+
+
+
+  .blue-about .et_pb_row_2 {
+
+
+
+    padding-bottom: 0;
+
+
+
+  }
+
+
+
+  #styled-bullets {
+
+
+
+    padding-top: 0;
+
+
+
+  }
+
+
+
+  .styled-bullet-1:before,
+
+
+
+  .styled-bullet-2:before,
+
+
+
+  .styled-bullet-3:before {
+
+
+
+    top: 0;
+
+
+
+  }
+
+
+
+  .et_pb_column.et_pb_column_1_3.et_pb_column_17 {
+
+
+
+    display: none;
+
+
+
+  }
+
+
+
+  .et_pb_text_12 {
+
+
+
+    max-width: 100% !important;
+
+
+
+    margin: 0 !important;
+
+
+
+  }
+
+
+
+  #post-240 .et_pb_text_12 {
+
+
+
+    margin: 0 !important;
+
+
+
+  }
+
+
+
+  #post-240 .et_pb_row_10 {
+
+
+
+    padding-top: 0px !important;
+
+
+
+  }
+
+
+
+  #membership-form .ninja-forms-cont {
+
+
+
+    width: 80%;
+
+
+
+  }
+
+
+
+  #simplemodal-login-container {
+
+
+
+    top: 47px !important;
+
+
+
+  }
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 760px) {
+
+
+
+  .ls-wp-fullwidth-container {
+
+
+
+    display: none;
+
+
+
+  }
+
+
+
+  #main-header {
+
+
+
+    background-position: 0 40px;
+
+
+
+  }
+
+
+
+  ul#mobile_menu {
+
+
+
+    width: 50%;
+
+
+
+  }
+
+
+
+  .blue-section h1 {
+
+
+
+    font-size: 32px;
+
+
+
+  }
+
+
+
+  #callout-container,
+
+
+
+  #callout-container .widget {
+
+
+
+    width: 100%;
+
+
+
+  }
+
+
+
+  #callout-container .widget:after,
+
+
+
+  .left-image,
+
+
+
+  .right-image {
+
+
+
+    display: none;
+
+
+
+  }
+
+
+
+  .fpw-featured-image {
+
+
+
+    float: left;
+
+
+
+    padding: 20px;
+
+
+
+  }
+
+
+
+  #callout-container .fpw-page-title {
+
+
+
+    font-size: 27px;
+
+
+
+    text-align: left;
+
+
+
+    margin-left: 140px;
+
+
+
+    margin-bottom: 0px;
+
+
+
+  }
+
+
+
+  #callout-container .fpw-excerpt {
+
+
+
+    font-size: 14px;
+
+
+
+    font-weight: 500;
+
+
+
+    line-height: 1.4;
+
+
+
+    margin-left: 140px;
+
+
+
+    text-align: left;
+
+
+
+  }
+
+
+
+  #callout-container .fpw-read-more-link {
+
+
+
+    font-size: 14px;
+
+
+
+    margin-top: 10px;
+
+
+
+    max-width: 160px;
+
+
+
+    margin-left: 20px;
+
+
+
+  }
+
+
+
+  #callout-container hr {
+
+
+
+    display: none;
+
+
+
+  }
+
+
+
+  #fpw_widget-3.widget .wp-post-image {
+
+
+
+    width: 120px;
+
+
+
+    height: 120px;
+
+
+
+  }
+
+
+
+  .grassy-knoll .et_pb_text_1 {
+
+
+
+    float: none;
+
+
+
+    max-width: 100%;
+
+
+
+    display: block;
+
+
+
+    margin-right: 0;
+
+
+
+    text-align: center;
+
+
+
+  }
+
+
+
+  .grassy-knoll {
+
+
+
+    padding: 0 !important;
+
+
+
+    margin-top: 60px;
+
+
+
+  }
+
+
+
+  .grassy-knoll .button-wrapper {
+
+
+
+    text-align: center;
+
+
+
+  }
+
+
+
+  /*divi*/
+
+
+
+  .et_pb_text_0,
+
+
+
+  .et_pb_text_1,
+
+
+
+  .et_pb_text_2 {
+
+
+
+    max-width: 100% !important;
+
+
+
+  }
+
+
+
+  .et_pb_gutters3.et_pb_footer_columns_1_4__1_2 .footer-widget:nth-child(2) {
+
+
+
+    padding-right: 0;
+
+
+
+  }
+
+
+
+  .et_pb_column_4_4 .et_pb_pricing_table {
+
+
+
+    width: 100% !important;
+
+
+
+  }
+
+
+
+  .et_pb_pricing_table.et_pb_pricing_table_0:after,
+
+
+
+  .et_pb_pricing_table.et_pb_pricing_table_1:after,
+
+
+
+  .et_pb_pricing_table.et_pb_pricing_table_2:after,
+
+
+
+  .et_pb_pricing_table.et_pb_pricing_table_3:after {
+
+
+
+    display: none;
+
+
+
+  }
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 460px) {
+
+
+
+  #simplemodal-login-container {
+
+
+
+    width: 100% !important;
+
+
+
+    top: 48px !important;
+
+
+
+  }
+
+
+
+  .login > a {
+
+
+
+    font-size: 16px;
+
+
+
+  }
+
+
+
+  #sign-in {
+
+
+
+    padding: 7px 10px;
+
+
+
+  }
+
+
+
+  #sign-in img {
+
+
+
+    height: 22px;
+
+
+
+    width: 22px;
+
+
+
+  }
+
+
+
+  h1,
+
+
+
+  h2,
+
+
+
+  h3,
+
+
+
+  h4,
+
+
+
+  h5,
+
+
+
+  h6 {
+
+
+
+    line-height: 1;
+
+
+
+  }
+
+
+
+  h1 {
+
+
+
+    font-size: 30px;
+
+
+
+  }
+
+
+
+  .tagline {
+
+
+
+    font-size: 18px;
+
+
+
+  }
+
+
+
+  .fpw-featured-image {
+
+
+
+    float: none;
+
+
+
+  }
+
+
+
+  #callout-container .fpw-page-title {
+
+
+
+    font-size: 30px;
+
+
+
+    margin: 0 20px;
+
+
+
+    text-align: center;
+
+
+
+  }
+
+
+
+  #callout-container hr {
+
+
+
+    display: block;
+
+
+
+  }
+
+
+
+  #callout-container .fpw-excerpt {
+
+
+
+    font-size: 16px;
+
+
+
+    margin: 5px 20px;
+
+
+
+    text-align: center;
+
+
+
+  }
+
+
+
+  #callout-container .fpw-read-more-link {
+
+
+
+    float: none;
+
+
+
+    max-width: none;
+
+
+
+  }
+
+
+
+  /*mobile menu*/
+
+
+
+  ul#mobile_menu {
+
+
+
+    width: 100%;
+
+
+
+  }
+
+
+
+}
+
+
+
+
+
+
+
+/* Changes by Isaac */
+
+
+
+
+
+
+
+/* Temporary Changes */
+
+
+
+/* #sign-in {
+
+
+
+  display: none;
+
+
+
+} */
+
+
+
+
+
+
+
+/*Changes for laughter image*/
+
+
+
+@media (min-width: 981px) {
+
+
+
+div.et_menu_container {
+
+
+
+  padding-left: 4%;
+
+
+
+}
+
+
+
+}
+
+
+
+@media (min-width: 761px) {
+
+
+
+/*Style address*/
+
+
+
+body.single-event .event-address {
+
+
+
+  display: block;
+
+
+
+  margin-bottom: 25px;
+
+
+
+  text-align: center;
+
+
+
+  font-weight: bold;
+
+
+
+}
+
+
+
+}
+
+/*Changes for new optional buttons*/
+.optional-button {
+  float: right;
+  padding-left: 5px;
+}
+
+/* Add disabled class for buttons/links */
+.button.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  background: rgba(69, 67, 64, 0.5);
+}
+
+/* Fix team view */
+figcaption .awsm-personal-info h3, figcaption .awsm-personal-info {
+	color: #333 !important;
+	border-color: #333;
+}
+
+/*Restyle the "who we are" page*/
+.list-style .awsm-grid-card figure img {
+  max-width: 200px;
+}
+
+/*Styling for class description page*/
+.et_pb_toggle_close{
+  padding-right: 5px;
+}
+
+.et_pb_toggle_close:nth-child(even){
+  background: #E9920D;
+}
