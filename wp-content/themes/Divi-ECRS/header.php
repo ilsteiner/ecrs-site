@@ -229,7 +229,7 @@
 		<?php endif; ?>
 		
 <?php if ( is_page( 'gallery-2' ) ) : ?>
-      <iframe src="http://gallery.ecrs.org/" height="550" width="100%" allowfullscreen="" frameborder="0" style="margin-bottom: -5px;"></iframe>
+      <iframe src="https://gallery.ecrs.org/" height="550" width="100%" allowfullscreen="" frameborder="0" style="margin-bottom: -5px;"></iframe>
     <?php endif; ?>
 		<div id="et-main-area">
 			<?php if ( is_front_page() || is_home() ) : ?>
