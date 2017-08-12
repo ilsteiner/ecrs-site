@@ -6,7 +6,6 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 
 ?>
 <div id="main-content">
-THis is a test
 <?php if ( ! $is_page_builder_used ) : ?>
 
 	<div class="container">
@@ -41,8 +40,14 @@ THis is a test
 
 					<div class="entry-content">
 					<?php
-						echo "This is a test.";
+						// Buffer the output so we can modify it
+						ob_start();
+
 						the_content();
+
+						$original = ob_get_clean();
+
+						echo str_replace("awsm-grid-card", "awsm-grid-card et-waypoint et_pb_animation_fade_in", $original);
 
 						if ( ! $is_page_builder_used )
 							wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'Divi' ), 'after' => '</div>' ) );
