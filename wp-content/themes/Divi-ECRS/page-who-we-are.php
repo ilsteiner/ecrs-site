@@ -41,7 +41,7 @@ THis is a test
 
 					<div class="entry-content">
 					<?php
-						echo "This is a test."
+						echo "This is a test.";
 						the_content();
 
 						if ( ! $is_page_builder_used )
