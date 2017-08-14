@@ -1,15 +1,18 @@
-function reactToChange(changing,changed) {
-  jQuery(".c-name input").eq(changing).on("change paste keyup", function() {
-    jQuery(".c-name input").eq(changed).val(jQuery(this).val());
+function reactToChange(selector,changing,changed) {
+  jQuery(selector).eq(changing).on("change paste keyup", function() {
+    jQuery(selector).eq(changed).val(jQuery(this).val());
   });
 
   //Make the changed field read only
-  jQuery(".c-name input").eq(changed).prop("readonly",true);
-  jQuery(".c-name input").eq(changed).addClass("readonly");
+  jQuery(selector).eq(changed).prop("readonly",true);
+  jQuery(selector).eq(changed).addClass("readonly");
 }
 
 // Changes to first name field affect third name field
-reactToChange(0,2);
+reactToChange(".c-name input",0,2);
 
 // Changes to second name field affect fourth name field
-reactToChange(1,3);
+reactToChange(".c-name input",1,3);
+
+//Changes to first email field affect second email field
+reactToChange(".c-email input",0,1); 
