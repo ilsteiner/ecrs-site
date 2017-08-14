@@ -90,7 +90,7 @@ add_action('init', function() {
     add_rewrite_tag( '%event_name%', '([^&]+)' );
 }, 10, 0);
 
-//Enqueue tabs plugin
+//Enqueue tabs stuff
 function register_tabs_stuff() {
   if ( is_page( 'class-descriptions' ) ) {
     wp_enqueue_style( 'tabs-styles', get_stylesheet_directory_uri() . '/css/tabs.css' );
@@ -99,4 +99,14 @@ function register_tabs_stuff() {
   }
 }
 add_action( 'wp_enqueue_scripts', 'register_tabs_stuff' );
+
+//Enqueue registration stuff
+function register_registration_stuff() {
+  if ( is_page( 'single-event' ) ) {
+    wp_enqueue_style( 'reg-styles', get_stylesheet_directory_uri() . '/css/registration.css' );
+    wp_enqueue_script( 'reg-script', get_stylesheet_directory_uri() . '/js/registration.js', array( 'jquery' ), '1.0', true );
+    
+  }
+}
+add_action( 'wp_enqueue_scripts', 'register_registration_stuff' );
 ?>
