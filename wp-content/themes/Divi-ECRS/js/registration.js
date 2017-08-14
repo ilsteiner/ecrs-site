@@ -8,11 +8,13 @@ function reactToChange(selector,changing,changed) {
   jQuery(selector).eq(changed).addClass("readonly");
 }
 
-// Changes to first name field affect third name field
-reactToChange(".c-name input",0,2);
+jQuery(document).ready(function(jQuery) {
+	// Changes to first name field affect third name field
+	reactToChange(".c-name input",0,2);
 
-// Changes to second name field affect fourth name field
-reactToChange(".c-name input",1,3);
+	// Changes to second name field affect fourth name field
+	reactToChange(".c-name input",1,3);
 
-//Changes to first email field affect second email field
-reactToChange(".c-email input",0,1); 
+	//Changes to first email field affect second email field
+	reactToChange(".c-email input",0,1); 
+});
