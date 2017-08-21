@@ -11,13 +11,12 @@ div[data-field="TuitionTimer1"] {
   font-family: 'Open Sans',Helvetica,sans-serif;
   color: #424242;
   font-weight: 500;
-  font-size: 1em;
+  font-size: 1.3em;
   margin-top: -50px;
 }
 
 .counter {
   font-weight: 900;
-  font-size: 1.3em;
 }
 
 .counter:after {
