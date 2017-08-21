@@ -108,12 +108,12 @@ function register_registration_stuff() {
 add_action( 'wp_enqueue_scripts', 'register_registration_stuff' );
 
 //Enqueue countdown stuff
+wp_register_style( 'count-styles', get_stylesheet_directory_uri() . 'https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.css' );
+wp_register_script( 'count-lib', get_stylesheet_directory_uri() . 'https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js', array( 'jquery' ), '1.0', true );
+wp_enqueue_style('count-styles');
+wp_enqueue_script('count-lib');
+
 function register_countdown_stuff() {
-  wp_register_style( 'count-styles', get_stylesheet_directory_uri() . 'https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.css' );
-  wp_register_script( 'count-lib', get_stylesheet_directory_uri() . 'https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js', array( 'jquery' ), '1.0', true );
-  
-  wp_enqueue_style('count-styles');
-  wp_enqueue_script('count-lib');
   wp_enqueue_script( 'count-script', get_stylesheet_directory_uri() . '/js/countdown.js', array( 'jquery','count-lib' ), '1.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'register_countdown_stuff' );
