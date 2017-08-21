@@ -14,6 +14,7 @@ jQuery(document).ready(function($) {
 	var counter =
   countdown(
   	function(ts) {
+  	  console.log("Counter fired!");
       jQuery('.counter').html(ts.toHTML());
     },
     new Date(softCutoff),
@@ -24,12 +25,14 @@ jQuery(document).ready(function($) {
 });
 
 function addOrdinal(element) {
+  console.log("Add ordinal");
   var num = element.text().match(/[\d]+/);
   var ordinalNum = getOrdinal(num);
   element.text(element.text().replace(/[\d]+/,ordinalNum));
 }
 
 function getOrdinal(n) {
+  console.log("Get ordinal");
     var s=["th","st","nd","rd"],
     v=n%100;
     return n+(s[(v-20)%10]||s[v]||s[0]);
