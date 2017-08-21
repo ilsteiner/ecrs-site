@@ -6,3 +6,27 @@ input.readonly {
 div.c-calculation-date[data-field="SoftCutoff"], div.c-calculation-date[data-field="HardCutoff"] {
   display: none;
 }
+
+div[data-field="TuitionTimer1"] {
+  font-family: 'Open Sans',Helvetica,sans-serif;
+  color: #424242;
+  font-weight: 900;
+  font-size: 1.3em;
+  margin-top: -50px;
+}
+
+.counter:before {
+  content("That's only")
+}
+
+.counter:after {
+  content("from now!")
+}
+
+.counter span:nth-child(even) {
+  color: #fbb03c;
+}
+
+.counter span:nth-child(odd) {
+  color: #119c11;
+}
