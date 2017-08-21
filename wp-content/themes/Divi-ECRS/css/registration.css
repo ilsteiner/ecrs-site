@@ -10,14 +10,14 @@ div.c-calculation-date[data-field="SoftCutoff"], div.c-calculation-date[data-fie
 div[data-field="TuitionTimer1"] {
   font-family: 'Open Sans',Helvetica,sans-serif;
   color: #424242;
-  font-weight: 900;
-  font-size: 1.3em;
+  font-weight: 500;
+  font-size: 1em;
   margin-top: -50px;
 }
 
-.counter:before {
-  content: ("That's only");
-  padding-right: 5px;
+.counter {
+  font-weight: 900;
+  font-size: 1.3em;
 }
 
 .counter:after {
