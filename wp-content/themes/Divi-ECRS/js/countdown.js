@@ -1,8 +1,9 @@
 jQuery(document).ready(function($) {
 	var softCutoff = jQuery("div.c-calculation-date[data-field='SoftCutoff'] .c-content").text();
 	
-  // Add DOM element
+  // Add DOM elements
 	jQuery(".c-calculation-singleline:first-of-type .c-content").append("<div class='counter'</div>");
+	jQuery(".c-calculation-singleline:last-of-type .c-content").append("<div class='counter'</div>");
 	
 	var counter =
   countdown(
