@@ -2,3 +2,7 @@ input.readonly {
 	background-color: #eee;
 	opacity: .7;
 }
+
+div.c-calculation-date[data-field="SoftCutoff"], div.c-calculation-date[data-field="HardCutoff"] {
+  display: none;
+}

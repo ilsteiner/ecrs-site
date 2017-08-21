@@ -1,8 +1,6 @@
 jQuery(document).ready(function($) {
-	jQuery(".c-calculation-singleline:first-of-type").prepend("<div class=\"clock\"></div>");
-
-	var clock = jQuery('.clock').FlipClock(5619571, {
-			clockFace: 'DailyCounter',
-			countdown: true
-	});
+	var softCutoff = jQuery("div.c-calculation-date[data-field='SoftCutoff'] .c-content").text();
+	jQuery(".c-calculation-singleline:first-of-type .c-content").append("<div>"
+	  + countdown(new Date(softCutoff)).toString()
+	  + "</div>");
 });
