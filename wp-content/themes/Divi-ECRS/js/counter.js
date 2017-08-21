@@ -1,7 +1,3 @@
-jQuery(document).ready(function($) {
-  doTheStuff();
-});
-
 function doTheStuff() {
   var softCutoff = jQuery("div.c-calculation-date[data-field='SoftCutoff'] .c-content").text();
   
