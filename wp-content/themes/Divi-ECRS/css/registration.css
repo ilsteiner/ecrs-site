@@ -17,6 +17,7 @@ div[data-field="TuitionTimer1"] {
 
 .counter {
   font-weight: 900;
+  animation: heart ease 1s infinite;
 }
 
 .counter:after {
@@ -30,4 +31,19 @@ div[data-field="TuitionTimer1"] {
 
 .counter span:nth-child(odd) {
   color: #119c11;
+}
+
+@keyframes heart {
+	10%, 90% {
+		transform: scale(1);
+	}
+	20%, 80% {
+		transform: scale(1.002);
+	}
+	30%, 50%, 70% {
+		transform: scale(1.004);
+	}
+	40%, 60% {
+		transform: scale(1);
+	}
 }
