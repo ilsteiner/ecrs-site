@@ -12,7 +12,7 @@ div[data-field="TuitionTimer1"] {
   color: #424242;
   font-weight: 500;
   font-size: 1.3em;
-  margin-top: -50px;
+  margin-top: -50px !important;
 }
 
 .counter {
