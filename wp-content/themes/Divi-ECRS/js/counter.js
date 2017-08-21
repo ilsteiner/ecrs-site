@@ -12,6 +12,7 @@ jQuery(document).ready(function($) {
 	var counter =
   countdown(
   	function(ts) {
+      console.log("It works with logging for some reason.");
       jQuery('.counter').html(ts.toHTML());
     },
     new Date(softCutoff),
