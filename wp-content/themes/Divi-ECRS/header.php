@@ -49,7 +49,7 @@
 	<script type="text/javascript">
 		document.documentElement.className = 'js';
 	</script>
-	<!--<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>-->
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<?php wp_head(); ?>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/animate.css">
 
