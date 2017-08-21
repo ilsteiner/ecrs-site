@@ -102,7 +102,7 @@ add_action( 'wp_enqueue_scripts', 'register_tabs_stuff' );
 
 //Enqueue registration stuff
 function register_registration_stuff() {
-  if( is_page('single-event') ) {
+  if( get_post_type() == 'event' ) {
     wp_enqueue_style( 'reg-styles', get_stylesheet_directory_uri() . '/css/registration.css' );
     wp_enqueue_script( 'reg-script', get_stylesheet_directory_uri() . '/js/registration.js', array( 'jquery' ), '1.0', true );
   }
@@ -111,7 +111,7 @@ add_action( 'wp_enqueue_scripts', 'register_registration_stuff' );
 
 //Enqueue countdown stuff
 function register_countdown_stuff() {
-  if( is_page('single-event') ) {
+  if( get_post_type() == 'event' ) {
    wp_enqueue_script( 'count-script', get_stylesheet_directory_uri() . '/js/countdown.js', array( 'jquery' ), '1.0', true );
   }
 }
