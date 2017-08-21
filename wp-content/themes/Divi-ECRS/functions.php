@@ -112,7 +112,7 @@ add_action( 'wp_enqueue_scripts', 'register_registration_stuff' );
 //Enqueue countdown stuff
 function register_countdown_stuff() {
   if( get_post_type() == 'event' ) {
-   wp_enqueue_script( 'count-script', get_stylesheet_directory_uri() . '/js/countdown.js', array( 'jquery' ), '1.0', true );
+   wp_enqueue_script( 'count-script', get_stylesheet_directory_uri() . '/js/counter.js', array( 'jquery' ), '1.0', true );
   }
 }
 add_action( 'wp_enqueue_scripts', 'register_countdown_stuff' );
