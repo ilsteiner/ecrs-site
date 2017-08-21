@@ -20,7 +20,7 @@ div[data-field="TuitionTimer1"] {
 }
 
 .counter:after {
-  content: ("from now!");
+  content: "from now!";
   padding-left: 5px;
 }
 
