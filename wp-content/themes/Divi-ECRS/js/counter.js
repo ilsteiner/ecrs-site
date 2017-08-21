@@ -1,4 +1,6 @@
 jQuery(document).ready(function($) {
+  console.log("It fired!");
+  
 	var softCutoff = jQuery("div.c-calculation-date[data-field='SoftCutoff'] .c-content").text();
 	
 	//Insert ordinal
