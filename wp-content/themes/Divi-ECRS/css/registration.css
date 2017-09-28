@@ -47,3 +47,12 @@ div[data-field="TuitionTimer1"] {
 		transform: scale(1);
 	}
 }
+
+.c-forms-form:after {
+	display: block;
+	content: "What's PayPal? It's the system we use to process payments. You do not need a PayPal account to pay online - you only need a credit card.";
+	font-size: 1.2em;
+	font-weight: 700;
+	padding: 10px;
+	color: #8b0000;
+}
