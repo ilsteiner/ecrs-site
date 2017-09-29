@@ -68,3 +68,7 @@ div[data-field="MorningFirstPeriod"],div[data-field="MorningSecondPeriod"],div[d
 	-webkit-border-radius:5px;
 	border-radius:5px;
 }
+
+div[data-field="MorningFirstPeriod"],div[data-field="MorningSecondPeriod"] {
+	margin-bottom: 10px !important;
+}
