@@ -56,3 +56,15 @@ div[data-field="TuitionTimer1"] {
 	padding: 10px;
 	color: #8b0000;
 }
+
+.c-action-col {
+    margin-right: 15px;
+    font-size: 1.5em;
+}
+
+div[data-field="MorningFirstPeriod"],div[data-field="MorningSecondPeriod"],div[data-field="AfternoonPeriod"] {
+	border:solid 2px #119c11;
+	-moz-border-radius: 5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
