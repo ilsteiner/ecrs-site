@@ -108,5 +108,10 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 	});
 	</script>
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/wow.min.js"></script>
+	
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRB84P4"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 </body>
 </html>
