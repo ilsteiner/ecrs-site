@@ -1,13 +1,22 @@
 <?php
 //get event slug
-$event_name = get_query_var( 'event_name' );
+global $wp;
+
+$event_name = end(explode('/', home_url( $wp->request )));
 
 //get event object
 $event = null;
 
-if ( $events = eo_get_events( array(
-    'name' => $event_name
-) ) ) $event = $events[0];
+$query = new WP_Query(
+        array(
+            'name'   => $event_name,
+            'post_type'   => 'event',
+            'suppress_filters' => false
+        ) );
+
+$events = $query->get_posts();
+
+$event = $events[0];
 
 // Fix the title
 if($event != null){
@@ -53,18 +62,29 @@ get_header();
           //Event found
           else {
   				  //Arguments to find classes
-  				  $args = array(
-  				    'post-parent' => $event->ID,
-  				    'post_type' => 'class',
-  				    'orderby' => 'title',
-  				    'order' => 'ASC',
-  				    'posts_per_page' => -1
-  				    );
+
+            $args = array(
+              'meta_query' => array(array('key' => '_wpcf_belongs_event_id', 'value' => $event->ID)),
+              'post_type'   => 'class', 
+              'numberposts' => -1,
+              'order' => 'ASC'
+            );
+
+            $classes = get_children( $args );
+
+            /*$class_query = new WP_Query(
+              array(
+                'post-parent' => $event->ID,
+                'post_type' => 'class',
+                'orderby' => 'title',
+                'order' => 'ASC',
+                'posts_per_page' => -1
+              ) );
   				    
-  					$classes = get_posts($args);
+  					$classes = $class_query->get_posts();*/
   					
   					//No classes found
-  					if( is_null($classes) ) {
+  					if( is_null($classes) || count($classes) == 0 ) {
   					  echo '<div class="not-found">No classes found for this event.</div>';
   					}
   					
@@ -127,5 +147,4 @@ get_header();
 			<?php endwhile; ?>
 
 </div> <!-- #main-content -->
-
 <?php get_footer(); ?>

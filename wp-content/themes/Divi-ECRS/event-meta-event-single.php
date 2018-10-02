@@ -52,17 +52,21 @@
 
 <div class="entry-meta eventorganiser-event-meta">
 
-<!-- Optional Class Description button --!>
 <?php
+/* Optional Class Description button */
   $class_description_field = get_post_meta($post->ID, 'class_description', true);
   if(!empty($class_description_field) && $class_description_field == 'true') {
-    ?>
+?>
 <div class="optional-button"><a title="Class descriptions for this event" class="button no-line" target="_blank"
-	href="<?php echo esc_url( site_url( '/class-descriptions/' ) . $post->post_name )?>" data-ytta-id="-">Classes</a></div>
+	href="
+		<?php 
+			echo esc_url(
+					site_url( "/class-descriptions/" . $post->post_name )
+					)?>" data-ytta-id="-">Classes</a></div>
 <?php } ?>
 
-<!-- Added by Isaac 6/21/17 -->
 <?php
+	// Added by Isaac 6/21/17
 	// FAQ custom field value
 	$faq_field = get_post_meta($post->ID, 'faq', true);
 	// If it's set to 'true', then display

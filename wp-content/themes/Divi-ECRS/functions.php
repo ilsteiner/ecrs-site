@@ -109,6 +109,13 @@ function register_registration_stuff() {
 }
 add_action( 'wp_enqueue_scripts', 'register_registration_stuff' );
 
+// Custom query variables
+function custom_query_vars_filter($vars) {
+  $vars[] .= 'event_name';
+  return $vars;
+}
+add_filter( 'query_vars', 'custom_query_vars_filter' );
+
 //Enqueue countdown stuff
 /*
 function register_countdown_stuff() {
